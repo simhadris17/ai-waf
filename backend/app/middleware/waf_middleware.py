@@ -22,7 +22,10 @@ class WAFMiddleware(BaseHTTPMiddleware):
     async def dispatch(self, request, call_next):
         path = request.url.path
 
-        if any(path.startswith(p) for p in EXCLUDED_PREFIXES):
+        # The root endpoint is a health/status response, not user-controlled
+        # application traffic. Match it exactly so other routes remain
+        # protected.
+        if path == "/" or any(path.startswith(p) for p in EXCLUDED_PREFIXES):
             return await call_next(request)
 
         payload = f"{path}?{request.url.query}" if request.url.query else path
