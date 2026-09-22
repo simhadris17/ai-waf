@@ -6,6 +6,7 @@ if torch + transformers are installed. Falls back to a transparent keyword
 heuristic otherwise — this lets the whole stack run on Render free tier
 (no PyTorch) while still blocking obvious attack patterns.
 """
+import html
 import logging
 import os
 import re
@@ -38,13 +39,25 @@ _ATTACK_PATTERNS = tuple(re.compile(pattern, re.IGNORECASE) for pattern in (
     r"/(?:etc/(?:passwd|shadow)|windows/win\.ini|boot\.ini)\b",
     r"\b(?:cmd|exec|command)\s*=",
     r"\b(?:wget|curl|nc)\s+[^\s]+",
+    r"\bwhoami\b",
+    r"\brm\s+-rf\b",
+    r"\{\{\s*\d+\s*[+*\-/]\s*\d+\s*\}\}",
 ))
 
 
+def _normalize(text: str) -> str:
+    """Decode common URL/HTML obfuscation without changing normal URLs."""
+    normalized = text
+    for _ in range(3):
+        decoded = unquote_plus(normalized)
+        if decoded == normalized:
+            break
+        normalized = decoded
+    return html.unescape(normalized).lower().replace("\x00", "")
+
+
 def _keyword_fallback(text: str) -> tuple[str, float]:
-    # Decode query-string input before matching so encoded attacks cannot evade
-    # the fallback detector (for example %27%20OR%201%3D1).
-    normalized = unquote_plus(text).lower()
+    normalized = _normalize(text)
     if any(pattern.search(normalized) for pattern in _ATTACK_PATTERNS):
         return "ATTACK", 0.95
     if any(kw in normalized for kw in _ATTACK_KEYWORDS):
@@ -60,7 +73,6 @@ class AttackDetector:
         self._load_model()
 
     def _load_model(self):
-        # Check if the ML deps are even installed before attempting to load
         try:
             import torch  # noqa: F401
             import transformers  # noqa: F401
@@ -97,17 +109,11 @@ class AttackDetector:
             self.model = None
 
     def predict(self, text: str) -> tuple[str, float, str]:
-        """Returns (label, confidence, method).
-
-        label  - 'SAFE' or 'ATTACK'
-        confidence - float 0–1
-        method - 'none' | 'keyword' | 'ml' — which detection path fired
-        """
+        """Returns (label, confidence, method)."""
         if not text:
             return "SAFE", 0.0, "none"
 
-        # Always run the deterministic detector first. Known attack syntax must
-        # not depend on model confidence or on a model's label configuration.
+        # Deterministic checks always run first, independent of model confidence.
         kw_label, kw_conf = _keyword_fallback(text)
         if kw_label == "ATTACK":
             return kw_label, kw_conf, "keyword"
@@ -129,8 +135,7 @@ class AttackDetector:
         if label not in {"SAFE", "ATTACK"}:
             label = "ATTACK" if class_id == 1 else "SAFE"
 
-        method = "ml" if label == "ATTACK" else "none"
-        return label, round(confidence, 4), method
+        return label, round(confidence, 4), "ml" if label == "ATTACK" else "none"
 
 
 # Single shared instance, loaded once at process startup.
