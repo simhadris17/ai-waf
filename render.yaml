@@ -20,6 +20,7 @@ services:
   - type: web
     name: waf-backend
     runtime: python
+    pythonVersion: "3.11"
     plan: free
     rootDir: backend
     buildCommand: |
@@ -28,8 +29,6 @@ services:
     startCommand: python -m uvicorn app.main:app --host 0.0.0.0 --port $PORT
     healthCheckPath: /health
     envVars:
-      - key: PYTHON_VERSION
-        value: "3.11.9"
       - key: DATABASE_URL
         fromDatabase:
           name: waf-db
