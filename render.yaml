@@ -7,7 +7,7 @@
 #
 # After deploying:
 #   1. Set ADMIN_PASSWORD and SECRET_KEY in Render dashboard → Environment
-#   2. Set ALLOWED_ORIGINS to include your Vercel frontend URL
+#   2. The Vercel origin is configured below; add custom domains there if needed
 #   3. The DATABASE_URL is auto-injected from the Postgres service
 
 databases:
@@ -33,7 +33,7 @@ services:
           name: waf-db
           property: connectionString
       - key: SECRET_KEY
-        generateValue: true          # Render auto-generates a secure random value
+        generateValue: true
       - key: ENV
         value: production
       - key: DEBUG
@@ -41,10 +41,10 @@ services:
       - key: ADMIN_USERNAME
         value: admin
       - key: ADMIN_PASSWORD
-        sync: false                  # Set manually in dashboard — never commit password
+        sync: false
       - key: MODEL_DIR
         value: ./model/final
       - key: ATTACK_CONFIDENCE_THRESHOLD
         value: "0.75"
       - key: ALLOWED_ORIGINS
-        sync: false                  # Set to your Vercel URL, e.g. https://ai-waf.vercel.app
+        value: https://ai-waf-pink.vercel.app
