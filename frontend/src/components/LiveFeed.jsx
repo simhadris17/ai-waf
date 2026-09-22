@@ -1,28 +1,42 @@
 import { useEffect, useRef } from "react";
 
 export default function LiveFeed({ events }) {
-  const scrollRef = useRef(null);
+  const bottomRef = useRef(null);
 
   useEffect(() => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
-    }
+    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [events]);
 
   return (
-    <div className="terminal" ref={scrollRef}>
-      {events.length === 0 && (
-        <div className="terminal-empty">Waiting for traffic… send a request to see it here.</div>
-      )}
-      {events.map((e, i) => (
-        <div className="terminal-line" key={i}>
-          <span className="terminal-time">{e.time}</span>
-          <span className={`terminal-tag ${e.label}`}>{e.label}</span>
-          <span className="terminal-path">
-            {e.path} {e.blocked ? "· BLOCKED" : ""} ({e.confidence.toFixed(2)})
-          </span>
-        </div>
-      ))}
+    <div className="panel">
+      <div className="panel-header">
+        <span className="panel-title">
+          <span className="panel-title-dot" />
+          Live Traffic
+        </span>
+        <span style={{ fontSize: 11, color: "var(--text-muted)" }}>
+          {events.length} events
+        </span>
+      </div>
+
+      <div className="live-feed">
+        {events.length === 0 ? (
+          <div className="feed-empty">
+            <div className="feed-empty-icon">📡</div>
+            <span>Waiting for traffic…</span>
+          </div>
+        ) : (
+          events.slice().reverse().map((ev, i) => (
+            <div key={i} className={`feed-line ${ev.label}`}>
+              <span className="feed-time">{ev.time}</span>
+              <span className={`feed-badge ${ev.label}`}>{ev.label}</span>
+              <span className="feed-path">{ev.path}</span>
+              <span className="feed-conf">{(ev.confidence * 100).toFixed(0)}%</span>
+            </div>
+          ))
+        )}
+        <div ref={bottomRef} />
+      </div>
     </div>
   );
 }

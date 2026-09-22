@@ -2,52 +2,71 @@ import { useState } from "react";
 import { api } from "../api";
 
 export default function SimulatePanel() {
-  const [text, setText] = useState("");
+  const [text, setText]     = useState("");
   const [result, setResult] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [error, setError]   = useState("");
 
-  async function handleTest() {
+  async function handleScan(e) {
+    e.preventDefault();
     if (!text.trim()) return;
-    setLoading(true);
     setResult(null);
+    setError("");
+    setLoading(true);
     try {
-      const res = await api.simulate(text);
-      setResult(res);
+      const data = await api.simulate(text);
+      setResult(data);
     } catch (err) {
-      setResult({ label: "ERROR", confidence: 0, text: err.message, attack_type: null });
+      setError(err.message || "Scan failed");
     } finally {
       setLoading(false);
     }
   }
 
+  const isAttack = result?.label === "ATTACK";
+
   return (
-    <div className="panel">
-      <div className="stat-label" style={{ marginBottom: 10 }}>
-        Test a payload against the model
-      </div>
-      <div className="simulate-row">
+    <div className="simulate-panel">
+      <div className="simulate-label">Payload Scanner</div>
+
+      <form onSubmit={handleScan} className="simulate-input-row">
         <input
           className="simulate-input"
-          placeholder="e.g. admin' OR 1=1 --"
           value={text}
           onChange={(e) => setText(e.target.value)}
-          onKeyDown={(e) => e.key === "Enter" && handleTest()}
+          placeholder="Enter a URL path or payload to scan…  e.g.  /search?q=' OR 1=1--"
+          spellCheck={false}
         />
-        <button className="btn-primary" onClick={handleTest} disabled={loading}>
-          {loading ? "Scanning…" : "Scan"}
+        <button className="btn-primary" disabled={loading || !text.trim()}>
+          {loading ? "Scanning…" : "🔍 Scan"}
         </button>
-      </div>
+      </form>
+
+      {error && (
+        <div className="login-error" style={{ marginTop: 12 }}>{error}</div>
+      )}
+
       {result && (
-        <div className={`result-badge ${result.label}`}>
-          <span>{result.label}</span>
-          <span style={{ opacity: 0.7 }}>·</span>
-          <span>confidence {Number(result.confidence).toFixed(2)}</span>
-          {result.attack_type && (
-            <>
-              <span style={{ opacity: 0.7 }}>·</span>
-              <span className="attack-method-tag">via {result.attack_type}</span>
-            </>
-          )}
+        <div className={`simulate-result ${result.label}`}>
+          <div className="result-header">
+            <span style={{ fontSize: 20 }}>{isAttack ? "🚨" : "✅"}</span>
+            <span className="result-label">
+              {isAttack ? "ATTACK DETECTED" : "SAFE"}
+            </span>
+            {result.attack_type && (
+              <span className={`result-tag ${result.attack_type}`}>
+                {result.attack_type === "ml" ? "🧠 ML Model" : "🔑 Keyword"}
+              </span>
+            )}
+          </div>
+          <div className="result-meta">
+            <span>Confidence: <strong style={{ color: "var(--text-primary)" }}>
+              {(result.confidence * 100).toFixed(1)}%
+            </strong></span>
+            <span>Payload: <strong style={{ color: "var(--text-primary)", fontFamily: "var(--font-mono)" }}>
+              {result.text.slice(0, 80)}{result.text.length > 80 ? "…" : ""}
+            </strong></span>
+          </div>
         </div>
       )}
     </div>
