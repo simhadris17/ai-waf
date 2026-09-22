@@ -10,7 +10,9 @@ import html
 import logging
 import os
 import re
+from difflib import SequenceMatcher
 from urllib.parse import unquote_plus
+from urllib.parse import urlparse
 
 from app.config import get_settings
 
@@ -43,6 +45,17 @@ _ATTACK_PATTERNS = tuple(re.compile(pattern, re.IGNORECASE) for pattern in (
     r"\brm\s+-rf\b",
     r"\{\{\s*\d+\s*[+*\-/]\s*\d+\s*\}\}",
 ))
+_KNOWN_BRAND_DOMAINS = (
+    "apple.com",
+    "amazon.com",
+    "facebook.com",
+    "github.com",
+    "google.com",
+    "instagram.com",
+    "linkedin.com",
+    "microsoft.com",
+    "paypal.com",
+)
 
 
 def _normalize(text: str) -> str:
@@ -56,8 +69,27 @@ def _normalize(text: str) -> str:
     return html.unescape(normalized).lower().replace("\x00", "")
 
 
+def _looks_like_brand_typosquat(text: str) -> bool:
+    candidate = text.strip()
+    if not re.match(r"^[a-z][a-z0-9+.-]*://", candidate, re.IGNORECASE):
+        return False
+
+    hostname = (urlparse(candidate).hostname or "").lower().rstrip(".")
+    if not hostname or hostname in _KNOWN_BRAND_DOMAINS:
+        return False
+
+    for brand in _KNOWN_BRAND_DOMAINS:
+        if hostname.endswith(f".{brand}"):
+            return False
+        if SequenceMatcher(None, hostname, brand).ratio() >= 0.82:
+            return True
+    return False
+
+
 def _keyword_fallback(text: str) -> tuple[str, float]:
     normalized = _normalize(text)
+    if _looks_like_brand_typosquat(normalized):
+        return "ATTACK", 0.90
     if any(pattern.search(normalized) for pattern in _ATTACK_PATTERNS):
         return "ATTACK", 0.95
     if any(kw in normalized for kw in _ATTACK_KEYWORDS):
