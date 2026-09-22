@@ -1,3 +1,5 @@
+// Keep local development on localhost while production uses the deployed API
+// even if Vercel's VITE_API_URL variable is missing.
 const API_BASE = import.meta.env.VITE_API_URL || (
   import.meta.env.PROD
     ? "https://waf-backend-tc4u.onrender.com"
