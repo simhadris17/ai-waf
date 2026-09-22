@@ -1,0 +1,47 @@
+# Render deployment configuration
+# Docs: https://render.com/docs/render-yaml-reference
+#
+# This creates:
+#   1. A free PostgreSQL database (waf-db)
+#   2. A web service for the FastAPI backend (waf-backend)
+#
+# After deploying:
+#   1. Set ADMIN_PASSWORD and SECRET_KEY in Render dashboard → Environment
+#   2. Set ALLOWED_ORIGINS to include your Vercel frontend URL
+#   3. The DATABASE_URL is auto-injected from the Postgres service
+
+databases:
+  - name: waf-db
+    databaseName: waf_db
+    user: waf_user
+    plan: free
+
+services:
+  - type: web
+    name: waf-backend
+    runtime: python
+    plan: free
+    rootDir: backend
+    buildCommand: pip install -r requirements-deploy.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: waf-db
+          property: connectionString
+      - key: SECRET_KEY
+        generateValue: true          # Render auto-generates a secure random value
+      - key: ENV
+        value: production
+      - key: DEBUG
+        value: "false"
+      - key: ADMIN_USERNAME
+        value: admin
+      - key: ADMIN_PASSWORD
+        sync: false                  # Set manually in dashboard — never commit password
+      - key: MODEL_DIR
+        value: ./model/final
+      - key: ATTACK_CONFIDENCE_THRESHOLD
+        value: "0.75"
+      - key: ALLOWED_ORIGINS
+        sync: false                  # Set to your Vercel URL, e.g. https://ai-waf.vercel.app

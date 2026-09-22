@@ -1,0 +1,16 @@
+# AI-WAF backend — full dependencies
+# For Render deploy (no torch), use requirements-deploy.txt instead.
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+sqlalchemy==2.0.35
+pydantic==2.9.2
+pydantic-settings==2.5.2
+python-jose[cryptography]==3.3.0
+pwdlib[argon2]==0.2.1
+python-multipart==0.0.9
+psycopg2-binary==2.9.9
+aiosqlite==0.20.0
+requests==2.32.3
+torch==2.4.1
+transformers==4.44.2
+datasets==2.21.0
