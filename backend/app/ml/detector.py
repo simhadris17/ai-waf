@@ -8,6 +8,8 @@ heuristic otherwise — this lets the whole stack run on Render free tier
 """
 import logging
 import os
+import re
+from urllib.parse import unquote_plus
 
 from app.config import get_settings
 
@@ -22,12 +24,31 @@ _ATTACK_KEYWORDS = [
     "cmd=", "wget ", "curl ", "nc -e", "eval(", "base64_decode",
 ]
 
+_ATTACK_PATTERNS = tuple(re.compile(pattern, re.IGNORECASE) for pattern in (
+    r"<\s*script\b",
+    r"\bon(?:error|load|click)\s*=",
+    r"\bjavascript\s*:",
+    r"\bunion\s+(?:all\s+)?select\b",
+    r"\b(?:select|insert|update|delete|drop)\s+.+\b(?:from|into|where|table)\b",
+    r"(?:'|\")\s*(?:or|and)\s+[^\s]+\s*=\s*[^\s]+",
+    r"\b(?:or|and)\s+\d+\s*=\s*\d+",
+    r"\bsleep\s*\(\s*\d+",
+    r"\b(?:xp_cmdshell|load_file|base64_decode|eval)\s*\(",
+    r"(?:\.\./|\.\.\\)+",
+    r"/(?:etc/(?:passwd|shadow)|windows/win\.ini|boot\.ini)\b",
+    r"\b(?:cmd|exec|command)\s*=",
+    r"\b(?:wget|curl|nc)\s+[^\s]+",
+))
+
 
 def _keyword_fallback(text: str) -> tuple[str, float]:
-    lowered = text.lower()
-    for kw in _ATTACK_KEYWORDS:
-        if kw in lowered:
-            return "ATTACK", 0.95
+    # Decode query-string input before matching so encoded attacks cannot evade
+    # the fallback detector (for example %27%20OR%201%3D1).
+    normalized = unquote_plus(text).lower()
+    if any(pattern.search(normalized) for pattern in _ATTACK_PATTERNS):
+        return "ATTACK", 0.95
+    if any(kw in normalized for kw in _ATTACK_KEYWORDS):
+        return "ATTACK", 0.95
     return "SAFE", 0.10
 
 
@@ -80,15 +101,19 @@ class AttackDetector:
 
         label  - 'SAFE' or 'ATTACK'
         confidence - float 0–1
-        method - 'none' | 'keyword' | 'ml'  — which detection path fired
+        method - 'none' | 'keyword' | 'ml' — which detection path fired
         """
         if not text:
             return "SAFE", 0.0, "none"
 
+        # Always run the deterministic detector first. Known attack syntax must
+        # not depend on model confidence or on a model's label configuration.
+        kw_label, kw_conf = _keyword_fallback(text)
+        if kw_label == "ATTACK":
+            return kw_label, kw_conf, "keyword"
+
         if self.model is None:
-            kw_label, kw_conf = _keyword_fallback(text)
-            method = "keyword" if kw_label == "ATTACK" else "none"
-            return kw_label, kw_conf, method
+            return "SAFE", 0.10, "none"
 
         inputs = self.tokenizer(
             text, return_tensors="pt", truncation=True, padding=True, max_length=128
@@ -99,13 +124,10 @@ class AttackDetector:
         probs = self._torch.softmax(outputs.logits, dim=-1)[0]
         class_id = int(self._torch.argmax(probs).item())
         confidence = float(probs[class_id].item())
-        label = self.model.config.id2label[class_id]
-
-        # Belt-and-braces: keyword hits always count as ATTACK even if the
-        # model is unsure, since these are unambiguous, high-signal payloads.
-        kw_label, kw_conf = _keyword_fallback(text)
-        if kw_label == "ATTACK" and confidence < settings.ATTACK_CONFIDENCE_THRESHOLD:
-            return kw_label, kw_conf, "keyword"
+        configured_label = self.model.config.id2label.get(class_id, "")
+        label = configured_label.upper()
+        if label not in {"SAFE", "ATTACK"}:
+            label = "ATTACK" if class_id == 1 else "SAFE"
 
         method = "ml" if label == "ATTACK" else "none"
         return label, round(confidence, 4), method
