@@ -135,6 +135,9 @@ class AttackDetector:
         if label not in {"SAFE", "ATTACK"}:
             label = "ATTACK" if class_id == 1 else "SAFE"
 
+        if label == "ATTACK" and confidence < settings.ATTACK_CONFIDENCE_THRESHOLD:
+            return "SAFE", round(1 - confidence, 4), "none"
+
         return label, round(confidence, 4), "ml" if label == "ATTACK" else "none"
 
 
