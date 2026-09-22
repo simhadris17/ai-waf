@@ -1,4 +1,8 @@
-const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:8000";
+const API_BASE = import.meta.env.VITE_API_URL || (
+  import.meta.env.PROD
+    ? "https://waf-backend-tc4u.onrender.com"
+    : "http://localhost:8000"
+);
 
 // Derive WebSocket base from API_BASE automatically:
 // https://my-backend.onrender.com  →  wss://my-backend.onrender.com
