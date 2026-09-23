@@ -28,6 +28,12 @@ export default function App() {
   useEffect(() => {
     if (!authed) return;
 
+    const handleAuthExpired = () => {
+      setAuthed(false);
+      setConnected(false);
+      wsRef.current?.close();
+    };
+    window.addEventListener("waf-auth-expired", handleAuthExpired);
     loadStats();
     const statsInterval = setInterval(loadStats, 5000);
 
@@ -41,7 +47,9 @@ export default function App() {
       socket.onopen = () => setConnected(true);
       socket.onclose = () => {
         setConnected(false);
-        retryTimer = setTimeout(connect, 2000);
+        if (localStorage.getItem("waf_token")) {
+          retryTimer = setTimeout(connect, 2000);
+        }
       };
       socket.onerror = () => socket.close();
       socket.onmessage = (msg) => {
@@ -60,6 +68,7 @@ export default function App() {
       clearInterval(statsInterval);
       clearTimeout(retryTimer);
       socket && socket.close();
+      window.removeEventListener("waf-auth-expired", handleAuthExpired);
     };
   }, [authed, loadStats]);
 

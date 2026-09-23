@@ -23,6 +23,10 @@ function authHeaders() {
 }
 
 async function handle(res) {
+  if (res.status === 401) {
+    localStorage.removeItem("waf_token");
+    window.dispatchEvent(new Event("waf-auth-expired"));
+  }
   if (!res.ok) {
     const body = await res.json().catch(() => ({}));
     throw new Error(body.detail || `Request failed (${res.status})`);
