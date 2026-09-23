@@ -88,6 +88,11 @@ def _looks_like_brand_typosquat(text: str) -> bool:
     return False
 
 
+def _is_url(text: str) -> bool:
+    parsed = urlparse(text.strip())
+    return parsed.scheme in {"http", "https"} and bool(parsed.netloc)
+
+
 def _safe_browsing_threat(text: str) -> bool | None:
     """Return True/False for a configured reputation result, or None if unavailable."""
     api_key = settings.GOOGLE_SAFE_BROWSING_API_KEY.strip()
@@ -189,6 +194,11 @@ class AttackDetector:
         kw_label, kw_conf = _keyword_fallback(text)
         if kw_label == "ATTACK":
             return kw_label, kw_conf, "keyword"
+
+        # The text classifier is trained on request payloads, not URL syntax.
+        # Do not let it turn an otherwise clean URL into a false positive.
+        if _is_url(_normalize(text)):
+            return "SAFE", 0.99, "url"
 
         if self.model is None:
             return "SAFE", 0.10, "none"
