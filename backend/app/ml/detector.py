@@ -94,6 +94,17 @@ def _is_url(text: str) -> bool:
     return parsed.scheme in {"http", "https"} and bool(parsed.netloc)
 
 
+def _has_malformed_web_scheme(text: str) -> bool:
+    match = re.match(r"^([a-z][a-z0-9+.-]*)://", text.strip(), re.IGNORECASE)
+    if not match:
+        return False
+    scheme = match.group(1).lower()
+    return scheme not in {"http", "https"} and any(
+        SequenceMatcher(None, scheme, valid).ratio() >= 0.75
+        for valid in ("http", "https")
+    )
+
+
 def _safe_browsing_threat(text: str) -> bool | None:
     """Return True/False for a configured reputation result, or None if unavailable."""
     api_key = settings.GOOGLE_SAFE_BROWSING_API_KEY.strip()
@@ -131,6 +142,8 @@ def _safe_browsing_threat(text: str) -> bool | None:
 
 def _keyword_fallback(text: str) -> tuple[str, float]:
     normalized = _normalize(text)
+    if _has_malformed_web_scheme(normalized):
+        return "ATTACK", 0.90
     reputation_result = _safe_browsing_threat(normalized)
     if reputation_result is True:
         return "ATTACK", 0.99
