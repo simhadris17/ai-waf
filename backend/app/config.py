@@ -29,6 +29,7 @@ class Settings(BaseSettings):
     # ML model — set to path of trained model dir; falls back to keyword detection
     MODEL_DIR: str = "./model/final"
     ATTACK_CONFIDENCE_THRESHOLD: float = 0.75
+    GOOGLE_SAFE_BROWSING_API_KEY: str = ""
 
     # CORS — comma-separated list of allowed frontend origins
     # Include your Vercel URL here once deployed, e.g.:

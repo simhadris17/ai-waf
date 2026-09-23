@@ -14,6 +14,8 @@ from difflib import SequenceMatcher
 from urllib.parse import unquote_plus
 from urllib.parse import urlparse
 
+import requests
+
 from app.config import get_settings
 
 logger = logging.getLogger("ai-waf.detector")
@@ -86,8 +88,46 @@ def _looks_like_brand_typosquat(text: str) -> bool:
     return False
 
 
+def _safe_browsing_threat(text: str) -> bool | None:
+    """Return True/False for a configured reputation result, or None if unavailable."""
+    api_key = settings.GOOGLE_SAFE_BROWSING_API_KEY.strip()
+    parsed = urlparse(text.strip())
+    if not api_key or parsed.scheme not in {"http", "https"} or not parsed.netloc:
+        return None
+
+    endpoint = (
+        "https://safebrowsing.googleapis.com/v4/threatMatches:find"
+        f"?key={api_key}"
+    )
+    payload = {
+        "client": {"clientId": "ai-waf", "clientVersion": "1.0"},
+        "threatInfo": {
+            "threatTypes": [
+                "MALWARE",
+                "SOCIAL_ENGINEERING",
+                "UNWANTED_SOFTWARE",
+                "POTENTIALLY_HARMFUL_APPLICATION",
+            ],
+            "platformTypes": ["ANY_PLATFORM"],
+            "threatEntryTypes": ["URL"],
+            "threatEntries": [{"url": text.strip()}],
+        },
+    }
+    try:
+        response = requests.post(endpoint, json=payload, timeout=3)
+        response.raise_for_status()
+    except requests.RequestException:
+        logger.warning("Google Safe Browsing lookup failed", exc_info=True)
+        return None
+
+    return bool(response.json().get("matches"))
+
+
 def _keyword_fallback(text: str) -> tuple[str, float]:
     normalized = _normalize(text)
+    reputation_result = _safe_browsing_threat(normalized)
+    if reputation_result is True:
+        return "ATTACK", 0.99
     if _looks_like_brand_typosquat(normalized):
         return "ATTACK", 0.90
     if any(pattern.search(normalized) for pattern in _ATTACK_PATTERNS):
