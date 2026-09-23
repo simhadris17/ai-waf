@@ -20,6 +20,7 @@ services:
   - type: web
     name: waf-backend
     runtime: python
+    pythonVersion: "3.11"
     plan: free
     rootDir: backend
     buildCommand: |
@@ -46,5 +47,7 @@ services:
         value: ./model/final
       - key: ATTACK_CONFIDENCE_THRESHOLD
         value: "0.75"
+      - key: GOOGLE_SAFE_BROWSING_API_KEY
+        sync: false
       - key: ALLOWED_ORIGINS
         value: https://ai-waf-pink.vercel.app

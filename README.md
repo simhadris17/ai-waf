@@ -1,262 +1,218 @@
-# AI-WAF — AI-Powered Web Application Firewall
+# AI-WAF
 
-[![CI](https://github.com/YOUR_USERNAME/ai-waf/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_USERNAME/ai-waf/actions)
+AI-WAF is a full-stack web application firewall and analytics dashboard built with FastAPI and React. It inspects incoming HTTP requests, detects suspicious payloads and malformed URLs, blocks high-confidence attacks before they reach app logic, and surfaces activity through a live monitoring dashboard.
 
-A full-stack security dashboard that inspects every HTTP request with a fine-tuned DistilBERT classifier (with keyword fallback), blocks high-confidence attacks (SQLi, XSS, path traversal, command injection), logs everything to a database, and streams live traffic to a React dashboard over WebSockets.
+The project combines deterministic attack checks with optional ML-based inference, giving a practical security layer for demo, testing, and production-like deployment environments.
 
-**Live demo:** [Frontend on Vercel](https://your-app.vercel.app) · [API on Render](https://your-api.onrender.com)
+---
+
+## Features
+
+- Middleware-level request inspection for inbound traffic
+- Detection of SQL injection, XSS, path traversal, command injection, malformed schemes, and typo-squatting domains
+- Confidence-based blocking and logging
+- JWT-based admin authentication
+- Live dashboard updates over WebSockets
+- Request history and analytics storage
+- Vercel + Render deployment configuration
 
 ---
 
 ## Architecture
 
-```
-Browser → WAFMiddleware (FastAPI)
-             ├─ AttackDetector.predict(path+query)
-             │      ├─ torch installed + model trained? → DistilBERT (label, conf, "ml")
-             │      └─ fallback                         → keyword scan (label, conf, "keyword")
-             ├─ SQLite / PostgreSQL log entry
-             ├─ WebSocket broadcast → React dashboard
-             └─ ATTACK? → 403 JSON  /  SAFE? → call_next handler
-```
-
-```
-ai-waf/
-├── backend/              FastAPI app
-│   ├── app/
-│   │   ├── main.py            App entrypoint, CORS, routes
-│   │   ├── config.py          Env-driven settings (pydantic-settings)
-│   │   ├── database.py        SQLAlchemy engine — SQLite / PostgreSQL auto-detect
-│   │   ├── models.py          ORM: request_logs table
-│   │   ├── schemas.py         Pydantic I/O models
-│   │   ├── security.py        JWT auth helpers
-│   │   ├── websocket_manager.py  Connection pool for live feed
-│   │   ├── middleware/
-│   │   │   └── waf_middleware.py  ← intercepts every request
-│   │   ├── ml/
-│   │   │   ├── detector.py    Loads model or falls back to keywords
-│   │   │   └── train.py       Fine-tunes DistilBERT on ml_data/dataset.json
-│   │   └── api/
-│   │       ├── routes_auth.py     POST /api/auth/login
-│   │       ├── routes_logs.py     GET /api/logs, GET /api/logs/stats
-│   │       ├── routes_simulate.py POST /api/simulate
-│   │       └── routes_ws.py       WS /ws/live
-│   ├── requirements.txt          Full deps (includes torch for ML)
-│   ├── requirements-deploy.txt   Lightweight deps (no torch — for Render free tier)
-│   └── Dockerfile
-├── frontend/             React + Vite dashboard
-│   ├── src/
-│   │   ├── App.jsx        Root — auth, WS connection, layout
-│   │   ├── api.js         All fetch/WS calls
-│   │   ├── styles.css     Dark SOC-style theme
-│   │   └── components/
-│   │       ├── Header.jsx         Top bar + connection status
-│   │       ├── StatCards.jsx      5 KPI cards (total/safe/attack/blocked/confidence)
-│   │       ├── LiveFeed.jsx       Scrolling terminal of live events
-│   │       ├── Charts.jsx         Pie + live bar chart (recharts)
-│   │       ├── SimulatePanel.jsx  Payload scanner
-│   │       ├── LogsTable.jsx      Filterable request log (IP, Method, Label…)
-│   │       └── Login.jsx          JWT login form
-│   ├── vercel.json        Vercel SPA config
-│   └── Dockerfile
-├── ml_data/dataset.json  Training data (406 SAFE/ATTACK samples)
-├── scripts/
-│   └── attack_simulator.py  Generates demo traffic
-├── render.yaml            Render.com deploy config
-├── docker-compose.yml     Local full-stack with Postgres
-└── .github/workflows/ci.yml  CI — import check + frontend build
+```text
+Browser → Frontend (React + Vite)
+            ↓
+       FastAPI backend
+            ↓
+      WAF middleware
+      ├─ URL normalization + heuristic checks
+      ├─ payload pattern detection
+      ├─ optional ML model classification
+      ├─ logging to SQLite/PostgreSQL
+      ├─ WebSocket broadcast to dashboard
+      └─ block malicious requests with 403 responses
 ```
 
 ---
 
-## 🚀 Quick Start — Local (No Docker)
+## Repository Structure
+
+```text
+ai-waf/
+├── backend/
+│   ├── app/
+│   │   ├── api/
+│   │   │   ├── routes_auth.py
+│   │   │   ├── routes_logs.py
+│   │   │   ├── routes_simulate.py
+│   │   │   └── routes_ws.py
+│   │   ├── middleware/
+│   │   │   └── waf_middleware.py
+│   │   ├── ml/
+│   │   │   ├── detector.py
+│   │   │   └── train.py
+│   │   ├── config.py
+│   │   ├── database.py
+│   │   ├── main.py
+│   │   ├── models.py
+│   │   ├── schemas.py
+│   │   ├── security.py
+│   │   └── websocket_manager.py
+│   ├── requirements.txt
+│   ├── requirements-deploy.txt
+│   ├── .python-version
+│   └── model/
+├── frontend/
+│   ├── src/
+│   ├── package.json
+│   ├── vercel.json
+│   └── vite.config.js
+├── ml_data/
+│   └── dataset.json
+├── render.yaml
+├── vercel.json
+├── docker-compose.yml
+├── .env.example
+├── README.md
+└── LICENSE
+```
+
+---
+
+## Prerequisites
+
+- Python 3.11+
+- Node.js 18+
+- npm
+- PostgreSQL optional for production deployment
+- Render and Vercel accounts for cloud deployment
+
+---
+
+## Local Setup
 
 ### Backend
 
 ```bash
 cd backend
-
-# Create virtual env
 python -m venv .venv
-.venv\Scripts\activate       # Windows
-# source .venv/bin/activate  # macOS/Linux
 
-# Install deps (full, including torch for ML)
+# Windows
+.venv\Scripts\activate
+
+# Linux/macOS
+# source .venv/bin/activate
+
 pip install -r requirements.txt
-
-# Configure
-cp ../. env.example .env
-# Edit .env — at minimum set SECRET_KEY and ADMIN_PASSWORD
-
-# Run
-uvicorn app.main:app --reload
-# → API: http://localhost:8000
-# → Docs: http://localhost:8000/docs
 ```
+
+Create environment settings:
+
+```bash
+copy ..\.env.example .env
+```
+
+Update the values in `backend/.env` or your environment, especially:
+- `SECRET_KEY`
+- `ADMIN_USERNAME`
+- `ADMIN_PASSWORD`
+- `DATABASE_URL`
+- `ALLOWED_ORIGINS`
+
+Run the backend:
+
+```bash
+uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+```
+
+The API is available at:
+- http://localhost:8000
+- http://localhost:8000/docs
 
 ### Frontend
 
 ```bash
 cd frontend
 npm install
-
-# Create a .env.local with the API URL (defaults to localhost:8000)
-echo "VITE_API_URL=http://localhost:8000" > .env.local
-
 npm run dev
-# → Dashboard: http://localhost:5173
 ```
 
-**Login** with `ADMIN_USERNAME` / `ADMIN_PASSWORD` from `backend/.env` (default: `admin` / `change-me`).
+The dashboard is available at:
+- http://localhost:5173
+
+Default admin credentials:
+- Username: `admin`
+- Password: `change-me`
 
 ---
 
-## 🐳 Quick Start — Docker Compose (Recommended)
+## Deployment
 
-```bash
-cd ai-waf
-cp .env.example backend/.env   # edit SECRET_KEY and ADMIN_PASSWORD
-docker compose up --build
-```
+### Render
 
-| Service   | URL                          |
-|-----------|------------------------------|
-| Dashboard | http://localhost:5173        |
-| API       | http://localhost:8000        |
-| API Docs  | http://localhost:8000/docs   |
-| Postgres  | localhost:5432               |
+The repo includes `render.yaml` for a Render Blueprint deployment that provisions:
+- a PostgreSQL database
+- a backend web service
+- health checks and environment configuration
 
-### Train the ML model (optional)
+### Vercel
 
-```bash
-docker compose exec backend python -m app.ml.train
-docker compose restart backend
-```
+Use the `frontend` directory as the Vercel project root and set:
+- `VITE_API_URL` to your deployed backend URL
 
 ---
 
-## 📡 Generate Demo Traffic
+## API Overview
 
-```bash
-pip install requests
-python scripts/attack_simulator.py --url http://localhost:8000 --count 40
-```
-
-Watch the live dashboard feed light up with SAFE / ATTACK events in real time.
-
----
-
-## ☁️ Deploy to Vercel + Render
-
-### 1. Push to GitHub
-
-```bash
-git init
-git add .
-git commit -m "initial commit"
-git remote add origin https://github.com/YOUR_USERNAME/ai-waf.git
-git push -u origin main
-```
-
-### 2. Deploy Backend → Render
-
-1. Go to [render.com](https://render.com) → **New** → **Blueprint**
-2. Connect your GitHub repo
-3. Render will read `render.yaml` and create:
-   - `waf-db` — free PostgreSQL
-   - `waf-backend` — Python web service
-4. In the Render dashboard, set these **Environment Variables** manually:
-   | Variable | Value |
-   |---|---|
-   | `ADMIN_PASSWORD` | your strong password |
-   | `ALLOWED_ORIGINS` | `https://your-app.vercel.app` *(set after Vercel deploy)* |
-5. Note your backend URL: `https://waf-backend.onrender.com`
-
-### 3. Deploy Frontend → Vercel
-
-1. Go to [vercel.com](https://vercel.com) → **Add New Project** → Import from GitHub
-2. Set **Root Directory** to `frontend`
-3. Add **Environment Variables**:
-   | Variable | Value |
-   |---|---|
-   | `VITE_API_URL` | `https://waf-backend.onrender.com` |
-4. Deploy — Vercel auto-detects Vite.
-
-### 4. Update CORS on Render
-
-Once you have your Vercel URL (e.g. `https://ai-waf.vercel.app`), go back to Render and set:
-```
-ALLOWED_ORIGINS=https://ai-waf.vercel.app,http://localhost:5173
-```
-
----
-
-## 🔒 API Reference
-
-| Method | Path | Auth | Description |
-|---|---|---|---|
-| `POST` | `/api/auth/login` | ❌ | Get JWT token |
-| `GET` | `/api/logs` | ✅ | List request logs (filter by label/search) |
-| `GET` | `/api/logs/stats` | ✅ | Aggregate stats |
-| `POST` | `/api/simulate` | ✅ | Scan a payload without logging |
-| `WS` | `/ws/live?token=` | JWT | Live traffic stream |
-| `GET` | `/health` | ❌ | Health check |
-| `GET` | `/docs` | ❌ | Swagger UI |
-
----
-
-## ⚙️ Environment Variables
-
-All backend config is via environment variables. See `.env.example` for the full list.
-
-| Variable | Default | Description |
+| Method | Path | Description |
 |---|---|---|
-| `SECRET_KEY` | *(required)* | JWT signing key — use a long random string |
-| `ADMIN_USERNAME` | `admin` | Dashboard login username |
-| `ADMIN_PASSWORD` | `change-me` | Dashboard login password |
-| `DATABASE_URL` | `sqlite:///./ai_waf.db` | SQLite (local) or `postgresql+psycopg2://...` |
-| `MODEL_DIR` | `./model/final` | Path to trained DistilBERT model |
-| `ATTACK_CONFIDENCE_THRESHOLD` | `0.75` | ML confidence threshold to trigger a block |
-| `ALLOWED_ORIGINS` | `http://localhost:5173` | Comma-separated CORS origins |
+| `POST` | `/api/auth/login` | Authenticate dashboard admin |
+| `GET` | `/api/logs` | Fetch recent requests |
+| `GET` | `/api/logs/stats` | Fetch aggregated WAF metrics |
+| `POST` | `/api/simulate` | Test a payload manually |
+| `GET` | `/health` | Health check |
+| `WS` | `/ws/live?token=` | Live traffic stream |
 
 ---
 
-## 🧠 ML Model
+## Model and Detection Strategy
 
-The WAF has two detection modes:
+AI-WAF uses a layered approach:
 
-| Mode | When | How |
-|---|---|---|
-| **ML** (`type=ml`) | torch + model trained | DistilBERT classifies the path+query |
-| **Keyword** (`type=keyword`) | ML uncertain or no model | Checks against ~24 known attack patterns |
+1. Deterministic checks for malicious patterns and URL anomalies
+2. Detection of malformed protocols and typo-squatting domains
+3. Optional ML classification using a trained model when available
+4. Confidence-based decision-making before a request is treated as safe or harmful
 
-To train or retrain the ML model:
+This gives better resilience against common attack payloads without relying solely on ML inference.
+
+---
+
+## Training the Model
+
+To train or refresh the bundled ML model:
+
 ```bash
 cd backend
-python -m app.ml.train   # reads ml_data/dataset.json
-# → saves model to backend/model/final/
+python -m app.ml.train
 ```
 
-The keyword fallback is used on Render free tier (no torch installed) but is production-capable against known attack signatures.
+This reads sample data from `ml_data/dataset.json` and writes the resulting model to the configured model directory.
 
 ---
 
-## 🔐 Security Notes for Production
+## Security Notes
 
-- Change `SECRET_KEY` to a cryptographically random 64-char string
-- Change `ADMIN_PASSWORD` to a strong password
-- Set `DEBUG=false` and `ENV=production`  
-- Add your frontend URL to `ALLOWED_ORIGINS`
-- Put the backend behind a reverse proxy with TLS
-- Consider adding rate limiting (`slowapi`) in front of the WAF
-- Swap SQLite for PostgreSQL for any real traffic volume
+- Change `SECRET_KEY` to a strong random value in production
+- Replace the default admin password before exposing the dashboard
+- Restrict `ALLOWED_ORIGINS` to trusted frontend domains
+- Ensure HTTPS is enabled in production
+- Use a managed PostgreSQL service for real workloads
+- Consider adding rate limiting and external threat intelligence feeds for broader coverage
 
 ---
 
-## 📈 Extending
+## License
 
-- **Better model**: Add more samples to `ml_data/dataset.json` and retrain
-- **Multiple users**: Add a `users` table with bcrypt-hashed passwords
-- **Alembic migrations**: Replace `Base.metadata.create_all` for versioned schema changes
-- **Rate limiting**: Add `slowapi` middleware
-- **Alerts**: Hook WebSocket events to Slack/email on high-confidence attacks
+This project is intended for learning, testing, and security research scenarios. Review and harden before using it in production environments exposed to untrusted traffic.
