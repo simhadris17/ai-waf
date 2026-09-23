@@ -57,6 +57,7 @@ _KNOWN_BRAND_DOMAINS = (
     "linkedin.com",
     "microsoft.com",
     "paypal.com",
+    "rpachallenge.com",
 )
 
 

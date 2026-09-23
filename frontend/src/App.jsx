@@ -16,6 +16,11 @@ export default function App() {
   const [refreshKey, setRefreshKey] = useState(0);
   const wsRef = useRef(null);
 
+  function handleScanComplete() {
+    setRefreshKey((key) => key + 1);
+    loadStats();
+  }
+
   const loadStats = useCallback(() => {
     api.getStats().then(setStats).catch(() => {});
   }, []);
@@ -83,7 +88,7 @@ export default function App() {
         </div>
 
         <div className="section-title">Payload scanner</div>
-        <SimulatePanel />
+        <SimulatePanel onScanComplete={handleScanComplete} />
 
         <div className="section-title">Request log</div>
         <LogsTable refreshKey={refreshKey} />

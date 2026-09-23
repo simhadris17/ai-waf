@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { api } from "../api";
 
-export default function SimulatePanel() {
+export default function SimulatePanel({ onScanComplete }) {
   const [text, setText]     = useState("");
   const [result, setResult] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -16,6 +16,7 @@ export default function SimulatePanel() {
     try {
       const data = await api.simulate(text);
       setResult(data);
+      onScanComplete?.();
     } catch (err) {
       setError(err.message || "Scan failed");
     } finally {
